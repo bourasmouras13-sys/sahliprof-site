@@ -1,0 +1,884 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="google-site-verification" content="qo2MWKKryIvHU5fx0y8dsoxSftjr7SPItw5SJiDL7nY" />
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#5a3a1a">
+<meta name="description" content="MoursahProf – وثائق تربوية وإدارية، روائز، جذاذات ودروس التعليم الصريح لجميع مستويات الابتدائي.">
+<title>MoursahProf | الوثائق التربوية</title>
+<style>
+:root{--brown:#5a3a1a;--dark:#432a13;--gold:#e8b923;--cream:#fffdf7;--sand:#dacbb4;--blue:#245b9d;--bar:100px}
+*{box-sizing:border-box}
+html{scroll-padding-top:calc(var(--bar) + 10px)}
+body{margin:0;background:var(--sand);color:var(--dark);font:16px/1.65 Cairo,Tahoma,"Segoe UI",Arial,sans-serif}
+[hidden]{display:none!important}
+a{color:inherit;text-decoration:none}button,input,select{font:inherit}
+button,.button{cursor:pointer}
+a:focus-visible,button:focus-visible,input:focus-visible,select:focus-visible,summary:focus-visible{outline:3px solid #2876b7;outline-offset:3px}
+.wood,.sheet{background:repeating-linear-gradient(90deg,#0001 0 2px,transparent 2px 9px),repeating-linear-gradient(88deg,#fff1 0 1px,transparent 1px 23px),linear-gradient(180deg,#a46b35,#805023 45%,#945d29 66%,#70431e)}
+.wrap{max-width:1150px;margin:auto;padding:0 16px}
+.menu{position:sticky;top:0;z-index:20;background:var(--brown);border-bottom:3px solid var(--gold);padding:6px;box-shadow:0 4px 10px #0004;text-align:center}
+.brand{display:inline-flex;align-items:center;justify-content:center;gap:7px;color:white;direction:ltr}
+.brand i{font-style:normal;background:var(--gold);border-radius:9px;padding:3px 6px}
+.brand strong{font-size:21px;font-weight:900}.brand strong span{color:var(--gold)}
+.brand small{color:#ffe9c2;font-size:12px}
+#nav{display:flex;flex-wrap:wrap;gap:5px;justify-content:center;margin:5px auto 0;direction:ltr}
+#nav a,#nav button,.button,.tools button,.tools select,.subjects button,.editor button{
+ border:1px solid #bba486;border-radius:7px;padding:6px 10px;background:#fff8e7;color:var(--brown);font-weight:bold;font-size:13px
+}
+#nav a:hover,#nav button:hover,.button:hover,.tools button:hover{filter:brightness(.94)}
+#nav .home-link{background:var(--gold)}#nav .test-link{background:#b33b30;color:white}
+#nav .print-link,.button.go{background:#29774d;color:#fff}
+.hero{text-align:center;padding:24px 16px 46px}
+.board{max-width:830px;margin:auto;position:relative;border:4px solid #503117;border-radius:18px;padding:26px 20px;background:var(--cream);
+ box-shadow:inset 0 0 17px #0003,0 0 0 5px #c28c50,0 12px 22px #0005}
+.board:before,.board:after{content:"";position:absolute;top:8px;bottom:8px;width:14px;background:
+ radial-gradient(circle at 35% 35%,white,#aaa 55%,#555 75%,transparent 78%) top/14px 14px no-repeat,
+ radial-gradient(circle at 35% 35%,white,#aaa 55%,#555 75%,transparent 78%) bottom/14px 14px no-repeat}
+.board:before{left:8px}.board:after{right:8px}
+.board h1{margin:4px 0;color:var(--brown);font-size:clamp(24px,3.2vw,32px)}
+.board h2{font-size:17px;margin:5px 0;color:var(--blue)}
+.board p{margin:12px 0}
+.search{display:flex;max-width:570px;margin:18px auto;border:2px solid #69441f;border-radius:35px;overflow:hidden;background:white}
+.search input{padding:11px 18px;min-width:0;flex:1;border:0;background:transparent}
+.search button{border:0;background:var(--gold);padding:0 20px;font-size:19px}
+.quick,.tools,.subjects{display:flex;align-items:center;justify-content:center;flex-wrap:wrap;gap:9px}
+.quick a{border-radius:30px;color:white;padding:10px 19px;font-weight:bold;box-shadow:0 4px 0 #0003}
+.section{padding:35px 0}.st{text-align:center;margin:0 auto 20px}
+.st h2,.plaque{display:inline-block;background:linear-gradient(#b57a3e,#79491f);color:#fff8e7;border:3px solid var(--gold);border-radius:30px;padding:5px 24px;box-shadow:0 0 0 2px #503117}
+.st h2{margin:0;font-size:21px}.st p{margin:8px 0;color:var(--brown)}.wood .st p{color:#fff0d8}
+.tiles{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:15px}
+.tile{--c:#2e8b57;position:relative;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:3px;min-height:171px;
+ padding:23px 8px 12px;background:var(--cream);border:3px solid #714a26;border-top:8px solid var(--c);border-radius:15px;text-align:center;box-shadow:0 7px 12px #0003}
+.tile:nth-child(6n+1){--c:#c0392b}.tile:nth-child(6n+2){--c:#a23871}.tile:nth-child(6n+3){--c:#df791a}
+.tile:nth-child(6n+4){--c:#326eb0}.tile:nth-child(6n+5){--c:#388453}.tile:nth-child(6n){--c:#7148a5}
+.tile:before{content:"AR / FR";position:absolute;top:7px;left:8px;background:var(--gold);border-radius:10px;font:bold 10px/1.8 Arial;padding:0 6px;color:#452a10}
+.tile:hover{transform:translateY(-3px)}.tile em{font-style:normal;font-size:32px}
+.tile b{font-size:16px}.tile i{font-style:normal;color:var(--blue);font-size:12.5px;font-weight:bold;direction:ltr}
+.tile small{color:#746553;font-size:11px}
+.levels{display:grid;grid-template-columns:repeat(6,1fr);gap:12px}
+.levels a{color:white;text-align:center;border-radius:14px;background:var(--c);padding:13px 5px;font-weight:bold;box-shadow:0 5px 0 #0004}
+.levels strong,.levels small{display:block}.levels strong{font-size:32px;line-height:1.2}
+.feats,.contacts{display:grid;grid-template-columns:repeat(4,1fr);gap:12px}
+.feats div,.panel{background:var(--cream);border-radius:13px;padding:17px;box-shadow:0 5px 10px #0002}
+.feats div{border-right:5px solid var(--c)}.feats b{display:block;color:var(--c)}
+.panel{border:2px solid #74502f;margin:25px 0}.panel h2{text-align:center;font-size:19px;color:var(--brown)}
+.contacts span{text-align:center;padding:11px 5px;color:white;font-weight:bold;font-size:13px;border-radius:9px;background:#827568}
+.footer{text-align:center;color:#ffebcb;padding:18px}.footer a{color:#ffda5b}
+.more{margin-top:21px}.more summary{cursor:pointer;font-weight:bold;color:var(--brown)}.more .tiles{margin-top:14px}
+.tools{background:#fff8eb;padding:10px;border-bottom:1px solid #bea076}.tools select{max-width:95%}
+#viewer{min-height:70vh}#sheets{overflow-x:auto;padding:10px 0 20px;direction:ltr}
+#library{padding:25px 0;min-height:55vh}.subjects button.active{background:var(--brown);color:#fff}
+.resources{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-top:14px}
+.resources article{background:white;border:2px solid #baa080;border-radius:12px;padding:15px}.resources h3{margin:0}
+.resources a,.resource-link{display:block;color:#205d94;text-decoration:underline;overflow-wrap:anywhere}
+.dim{color:#756958;font-size:13px}
+.editor{margin:18px 0;padding:14px;background:#fff8e5;border:1px dashed #af854b;border-radius:10px}
+.editor form{display:flex;flex-wrap:wrap;gap:8px;margin:10px 0}.editor input,.editor select,#week{padding:6px;max-width:100%;border:1px solid #bba486;border-radius:6px}
+.editor input[type=url]{flex:1;min-width:180px}
+#notice{text-align:center;color:#7f332a;font-weight:bold}
+@media(max-width:900px){.tiles{grid-template-columns:repeat(3,1fr)}.levels{grid-template-columns:repeat(3,1fr)}.feats,.contacts{grid-template-columns:1fr 1fr}}
+@media(max-width:620px){.menu{position:relative}html{scroll-padding-top:5px}.tiles{grid-template-columns:1fr 1fr}.tile{min-height:145px}.resources{grid-template-columns:1fr}.brand small{font-size:10px}.hero{padding-top:15px}.board{padding:16px 13px}.st h2{font-size:18px}.wrap{padding:0 10px}}
+/* Feuilles imprimables */
+.sheet{position:relative;width:210mm;min-height:296mm;margin:10px auto;padding:8mm;box-shadow:0 4px 14px #0004;display:flex;direction:ltr;color:#222;text-align:left;font:10.4px/1.42 "DejaVu Sans",Arial,Tahoma,sans-serif}
+.sheet.land{width:297mm;min-height:209mm}
+.inside{position:relative;background:#fffdf7;border:2px solid #5a3818;outline:3px double #d6a95d;box-shadow:inset 0 0 13px #0002;
+ flex:1;min-width:0;display:flex;flex-direction:column;padding:0 6mm}
+.sheet .pin{position:absolute;width:12px;height:12px;border-radius:50%;background:radial-gradient(circle at 32% 30%,white,#bababa 48%,#646464);z-index:1}
+.tl{top:3mm;left:3mm}.tr{top:3mm;right:3mm}.bl{bottom:3mm;left:3mm}.br{bottom:3mm;right:3mm}
+.flagbar{height:5px;background:linear-gradient(90deg,#c1272d 50%,#006233 50%);margin:0 -6mm}
+.paperhead,.paperfoot{display:flex;justify-content:space-between;align-items:center;gap:9px;font-size:9px;padding:5px 0;flex-wrap:wrap}
+.paperhead{border-bottom:1px solid #d6c5ae;color:#5a3a1a}
+.paperfoot{margin:auto -6mm 0;padding:5px 6mm;background:#5a3a1a;color:#ffe9c2}
+.pt{text-align:center;color:#5a3a1a;margin:3mm 0}.pt h1{margin:0;font-size:18px}.pt p{margin:2px 0;color:#2f6db5;font-size:14px;font-weight:bold}
+.contents{padding-bottom:3mm;min-width:0;flex:1}
+.sheet .a{direction:rtl;unicode-bidi:isolate;font-family:Tahoma,Arial,sans-serif}
+.sectionbar{background:#1f3a5f;color:#fff;border-inline:5px solid #e8b923;border-radius:4px;padding:4px 7px;margin:7px 0 4px;font-size:11.5px}
+.bil{display:flex;justify-content:space-between;align-items:baseline;gap:5px;flex-wrap:wrap}
+.sheet table{width:100%;border-collapse:collapse;background:white;margin:4px 0;font-size:10px}
+.sheet th,.sheet td{border:1px solid #c9b79c;padding:3px 5px;vertical-align:middle}
+.sheet th{background:#6e4119;color:white;text-align:center;font-size:9px}
+.sheet th .a{display:block}.sheet .key,.infoTable td:nth-child(odd){background:#fbf2df;font-weight:bold;color:#5a3a1a}
+.sheet .write{display:block;min-height:5mm;min-width:1em;background:#fffbea;color:#163d60;outline:0;line-height:1.4;white-space:pre-wrap;overflow-wrap:anywhere}
+.sheet .write:focus{background:#ffeaa4;box-shadow:inset 0 0 0 1px #c59621}
+.sheet .inline{display:inline-block;vertical-align:bottom;min-width:24mm;border-bottom:1px dotted #997d58}
+.sheet .lined{border-bottom:1px dotted #b29876;padding:3px}
+.sheet .two,.sheet .three,.sheet .four,.sheet .five,.sheet .six{display:grid;gap:6px}
+.sheet .two{grid-template-columns:repeat(2,minmax(0,1fr))}.sheet .three{grid-template-columns:repeat(3,minmax(0,1fr))}
+.sheet .four{grid-template-columns:repeat(4,minmax(0,1fr))}.sheet .five{grid-template-columns:repeat(5,minmax(0,1fr))}
+.sheet .six{grid-template-columns:repeat(6,minmax(0,1fr))}
+.box,.notep,.alertp{border:1.5px solid #c9b79c;background:#fff;border-radius:7px;padding:5px 8px;margin:4px 0}
+.box strong{color:var(--accent,#284b71)}.accent{border-top:5px solid var(--accent,#2f6db5)}
+.notep{background:#fffbea;border:1px dashed #bc9636}.alertp{border:2px solid #b4493c;background:#fff3ee}
+.sheet ul{padding-left:18px;margin:4px 0}.sheet p{margin:4px 0}
+.sigs{display:flex;justify-content:space-around;text-align:center;margin:7mm 0 2mm;gap:10px;font-weight:bold;color:#5a3a1a}
+.sigs span{flex:1;border-bottom:1px solid #7a7167;padding-bottom:8mm}
+.dense td,.dense th{font-size:8.6px;padding:2px 3px}.dense .write{min-height:4.6mm}
+.sheet .tiny{table-layout:fixed}.sheet .tiny th,.sheet .tiny td{padding:0;text-align:center;font-size:6.5px}.tiny .write{min-width:0;min-height:5.2mm}
+.sheet .pill{display:inline-block;border:1px solid #caa951;border-radius:15px;background:#fff6d8;color:#483414;padding:3px 7px;margin:2px;font-weight:bold}
+.bigtxt{padding:7px 9px;border:2px solid #74502f;border-radius:8px;background:white;font-size:16px;line-height:1.9}
+.letters span,.wordcard{background:white;border:2px solid #7d532f;border-radius:8px;text-align:center;padding:5px;font-size:20px;font-weight:bold;color:#1f3a5f}
+.sheet select,.sheet input:not([type=file]):not([type=checkbox]){font:inherit;width:100%;min-width:0;border:0;background:#fffbea;color:#203e60}
+.graph{display:block;width:100%;height:auto;max-height:65mm;border:1px solid #d4bf9f;background:white;border-radius:8px}
+.pic{height:32mm;display:flex;align-items:center;justify-content:center;border:2px dashed #af8b5e;border-radius:6px;position:relative;overflow:hidden;background:white;color:#84715b;cursor:pointer}
+.pic input{position:absolute;inset:0;opacity:0;width:100%;cursor:pointer}.pic img{width:100%;height:100%;object-fit:contain}
+.blue{background:repeating-linear-gradient(45deg,#e9edf4 0 2px,#fff 2px 9px);padding:4mm}
+.blue .inside{outline:3px double #2f648c;border-color:#e8731a;background:white}.blue th,.blue .paperfoot{background:#1f3a5f}
+.blue .sectionbar{background:linear-gradient(90deg,#1f3a5f,#2f6db5)}
+.blue .ga th:nth-last-child(3){background:#a83b34}.blue .ga th:nth-last-child(2){background:#8b6c12}.blue .ga th:last-child{background:#25744a}
+.blue .ga td:nth-last-child(3){background:#fff1ed}.blue .ga td:nth-last-child(2){background:#fffbe7}.blue .ga td:last-child{background:#eaf7ed}
+.bluecover{background:radial-gradient(circle at 45% 30%,#366daf,#183657 75%);color:white;text-align:center;padding:36mm 8mm;border-inline:5px solid #ed982c}
+.bluecover h2{font-size:28px}.bluecover p{font-size:15px}.bluecover .pill{color:#483414}
+.edt{background:white;border:3px solid #1a365d;padding:5mm}.edt .inside{outline:none;border:none;box-shadow:none;background:white}
+.edt .pt{background:#1a365d;color:white;padding:7px}.edt .pt p{color:#ffe4b5}.edt th{background:#334155}
+.edt .sched td{text-align:center;padding:2px 4px}.sched .write{min-height:6mm;background:transparent}
+.edt .pause{background:#d4dce5;letter-spacing:2px}.edt .session{background:#e5ecf1;font-weight:bold}.edt .cutrow{height:3mm;background:#a0adbc}
+.hanging .pt{margin:8mm auto 3mm;width:87%;border:3px solid #4a2c10;border-radius:9px;padding:5px;background:linear-gradient(#b97f43,#835121);color:white;box-shadow:0 4px 0 #0003}.hanging .pt p{color:#fff2d0}
+.stair{padding:5mm}.stair div{width:var(--w);background:var(--c);color:white;font-weight:bold;padding:5mm 3mm;margin:2mm 0;border-radius:7px;box-shadow:0 4px 0 #0002;font-size:14px}
+.shelf{border-bottom:8px solid #78491f;display:flex;align-items:flex-end;padding:0 3mm;margin:2mm 0 8mm}
+.book{display:inline-block;writing-mode:vertical-rl;color:white;font-size:9px;text-align:center;width:8mm;margin-right:2px;border-radius:3px}
+.cutcard,.labelcard{border:2px dashed var(--accent,#ab8a58);background:white;border-radius:8px;padding:4mm;text-align:center}
+.labelcard b{display:block;color:var(--accent,#734622);font-size:15px}.emoji{font-size:28px}
+.leaf{border-radius:0 50% 0 50%;background:#dbf4d5;border:2px solid #48a06b;padding:4mm}
+.bubble{border:2px solid #aa4979;padding:2mm 4mm;margin:4px 0;border-radius:12px;background:white}
+.svgart{display:block;width:100%;max-height:159mm}.ws{border-collapse:collapse!important;table-layout:fixed;width:87%!important;margin:4mm auto!important}.ws td{text-align:center;font-size:16px;font-weight:bold;height:9mm}
+.podium{display:flex;align-items:flex-end;gap:5mm;justify-content:center;margin:8mm 0}.pod{flex:1;text-align:center}
+.pod b{display:block;background:var(--accent);padding:4mm;font-size:28px;border-radius:8px}
+.diploma{text-align:center;padding:12mm 6mm;border:5px double var(--accent);background:#fffdf2}.diploma h2{font-size:30px;color:var(--accent)}
+.pass{border:2px solid #af8439;border-radius:4mm;min-height:47mm;padding:2mm;background:linear-gradient(120deg,#fffdf7,#f5e7ca)}
+.pass h3{text-align:center;margin:0;background:#87582c;color:white;padding:2px}
+.pass .pic{width:20mm;height:25mm;float:left;margin:2mm}
+.starcut{text-align:center;border:1px dashed #c4a982;padding:2mm;background:white}.starcut b{display:block;font-size:34px;color:var(--accent)}
+@page{size:A4 portrait;margin:0}@page paysage{size:A4 landscape;margin:0}
+@media print{
+ html,body{background:white!important;margin:0;padding:0}.noPrint,#home,#library,.menu,#notice{display:none!important}
+ #viewer{min-height:0}#sheets{overflow:visible;padding:0}
+ .sheet{margin:0;box-shadow:none;break-after:page;width:210mm;min-height:296mm}
+ .sheet.land{page:paysage;width:297mm;min-height:209mm}
+ .sheet.lastPrint{break-after:auto}.sheet tr,.box,.pic,.sectionbar{break-inside:avoid}
+ .sheet .write,.sheet input,.sheet select{background:transparent!important}
+ *{-webkit-print-color-adjust:exact;print-color-adjust:exact}
+}
+</style>
+</head>
+<body>
+<header class="menu">
+  <a class="brand" href="#home"><i>🎓</i><strong>Moursah<span>Prof</span></strong><small>الوثائق التربوية – Documents pédagogiques</small></a>
+  <nav id="nav" aria-label="أقسام الموقع"><a class="home-link" href="#home">🏠 الرئيسية</a><a href="#catalogue">📚 الكل</a></nav>
+</header>
+
+<main id="home">
+  <div class="wood hero"><div class="board">
+    <h1>👋 مرحبا بك في MoursahProf</h1>
+    <h2 lang="fr" dir="ltr">Tous les documents des écoles pionnières en un seul endroit</h2>
+    <p>وثائق تربوية وإدارية وروائز، <b>بالعربية والفرنسية</b>، قابلة للتعبئة والطباعة.</p>
+    <form class="search" id="searchForm"><input id="q" type="search" aria-label="البحث في الوثائق" placeholder="ابحث: دراسة حالة، روائز، الغياب… / Rechercher"><button aria-label="بحث">🔍</button></form>
+    <div class="quick"><a href="#catalogue" style="background:#2e8658">📥 جميع الوثائق</a><a href="#doc-tarl" style="background:#b83a30">🎯 روائز TaRL</a><a href="#niveaux" style="background:#2f6db5">📚 الدروس والجذاذات</a></div>
+  </div></div>
+
+  <section id="catalogue" class="section wrap">
+    <div class="st"><h2>📂 الوثائق التربوية والإدارية</h2><p>Documents pédagogiques et administratifs</p></div>
+    <div class="tiles" id="grid">
+      <a class="tile" href="#doc-tarl"><em>🎯</em><b>روائز TaRL</b><i>Tests de positionnement</i></a>
+      <a class="tile" href="#doc-cas"><em>🔍</em><b>دراسة حالة</b><i>Étude de cas</i></a>
+      <a class="tile" href="#doc-abs"><em>📋</em><b>تقرير الغياب</b><i>Rapport d’absence</i></a>
+      <a class="tile" href="#doc-freq"><em>🗓️</em><b>سجل المواظبة</b><i>Fréquentation</i></a>
+      <a class="tile" href="#doc-journal"><em>📒</em><b>المذكرة اليومية</b><i>Cahier journal</i></a>
+      <a class="tile" href="#doc-ee"><em>📝</em><b>جذاذة التدريس الصريح</b><i>Fiche explicite</i></a>
+      <a class="tile" href="#doc-edt"><em>🕐</em><b>استعمال الزمن</b><i>Emploi du temps</i></a>
+      <a class="tile" href="#doc-coins"><em>🧩</em><b>الأركان التعليمية</b><i>Les coins</i></a>
+      <a class="tile" href="#doc-groupes"><em>🎯</em><b>التعلم المتمايز</b><i>Groupes différenciés</i></a>
+      <a class="tile" href="#doc-rap"><em>📑</em><b>التقارير</b><i>Rapports</i></a>
+      <a class="tile" href="#doc-pv"><em>👥</em><b>الاجتماعات والمحاضر</b><i>Réunions et PV</i></a>
+      <a class="tile" href="#doc-garde"><em>🛡️</em><b>جدول الحراسة</b><i>Tableau de garde</i></a>
+      <a class="tile" href="#doc-rec"><em>🔢</em><b>إحصاء التلاميذ</b><i>Recensement</i></a>
+      <a class="tile" href="#doc-ref"><em>📚</em><b>المراجع والتكوينات</b><i>Références</i></a>
+      <a class="tile" href="#doc-coop"><em>🤝</em><b>تعاونية القسم</b><i>Coopérative</i></a>
+      <a class="tile" href="#doc-conv"><em>✉️</em><b>استدعاء الآباء</b><i>Convocation</i></a>
+      <a class="tile" href="#doc-regles"><em>📜</em><b>ميثاق القسم</b><i>Règles de la classe</i></a>
+    </div>
+    <details class="more panel" id="dossier">
+      <summary>📁 Dossier pédagogique – الملف التربوي والوثائق المكمّلة</summary>
+      <div class="tiles">
+        <a class="tile" href="#doc-perso"><em>🪪</em><b>البطاقة الشخصية والبادجات</b><i>Carte personnelle</i></a>
+        <a class="tile" href="#doc-listes"><em>👥</em><b>لوائح التلاميذ</b><i>Listes vierges</i></a>
+        <a class="tile" href="#doc-validation"><em>✅</em><b>رائز التحقق</b><i>Validation – Palier 2</i></a>
+        <a class="tile" href="#doc-portfolio"><em>🗂️</em><b>البورتفوليو</b><i>Portfolio – Tome 1</i></a>
+        <a class="tile" href="#doc-biblio"><em>📕</em><b>مكتبة القسم</b><i>Bibliothèque</i></a>
+        <a class="tile" href="#doc-mural"><em>📰</em><b>المجلة الحائطية</b><i>Journal mural</i></a>
+        <a class="tile" href="#doc-stars"><em>⭐</em><b>النجوم وشواهد التقدير</b><i>Étoiles et diplômes</i></a>
+        <a class="tile" href="#doc-cal"><em>🏖️</em><b>العطل والأيام العالمية</b><i>Calendrier</i></a>
+        <a class="tile" href="#doc-lettre"><em>📨</em><b>مراسلة بشأن الغياب</b><i>Lettre et suivi mensuel</i></a>
+      </div>
+    </details>
+    <p id="notFound" hidden>ما لقيناش وثيقة بهاد الكلمة. جرّب مثلاً «غياب» أو «lecture».</p>
+  </section>
+
+  <section class="section wood" id="niveaux"><div class="wrap">
+    <div class="st"><h2>📚 المستويات</h2><p>Choisir le niveau, la matière et la semaine</p></div>
+    <div class="levels">
+      <a href="#niv-1" style="--c:#df3635"><strong>1</strong>المستوى الأول<small>1re AEP</small></a>
+      <a href="#niv-2" style="--c:#e98508"><strong>2</strong>المستوى الثاني<small>2e AEP</small></a>
+      <a href="#niv-3" style="--c:#408e49"><strong>3</strong>المستوى الثالث<small>3e AEP</small></a>
+      <a href="#niv-4" style="--c:#1e82c5"><strong>4</strong>المستوى الرابع<small>4e AEP</small></a>
+      <a href="#niv-5" style="--c:#86259d"><strong>5</strong>المستوى الخامس<small>5e AEP</small></a>
+      <a href="#niv-6" style="--c:#00887e"><strong>6</strong>المستوى السادس<small>6e AEP</small></a>
+    </div>
+  </div></section>
+
+  <div class="section wrap">
+    <div class="st"><h2>⭐ لماذا MoursahProf؟</h2></div>
+    <div class="feats">
+      <div style="--c:#2e8b57"><b>✏️ قابلة للتعبئة</b>كتب فخانات النموذج.</div>
+      <div style="--c:#2f6db5"><b>🌍 عربية وفرنسية</b>وثائق وأنشطة باللغتين.</div>
+      <div style="--c:#bd4035"><b>🖨️ جاهزة للطباعة</b>اختار الوثيقة أو صفحة منها.</div>
+      <div style="--c:#d9791b"><b>🎁 مجانية</b>بلا تسجيل حساب.</div>
+    </div>
+    <section class="panel" id="about"><h2>ℹ️ من نحن – À propos</h2>
+      <p><b>MoursahProf</b> فضاء للموارد التربوية من إعداد <b>مراد السهلي – Mourad Sahli</b>، لتسهيل تنظيم وثائق الأستاذ ودروس التعليم الابتدائي.</p>
+    </section>
+    <section class="panel" id="contact"><h2>📞 اتصل بنا – Contact</h2>
+      <div class="contacts"><span>البريد – قريباً</span><span>Facebook – قريباً</span><span>الهاتف – قريباً</span><span>WhatsApp – قريباً</span></div>
+    </section>
+    <section class="panel" id="privacy"><h2>🔒 سياسة الخصوصية</h2>
+      <p>خانات التلاميذ والتوقيعات فارغة. ما تكتبه في الوثائق يبقى في الجلسة الحالية ولا يُرسل إلى الموقع. نزّل نسختك قبل إغلاق الصفحة. لا تنشر وثيقة معمّرة بمعلومات شخصية في مكتبة الدروس العامة.</p>
+      <p dir="ltr" lang="fr">Les modèles sont fournis à titre pédagogique. Les informations saisies ne sont pas envoyées à un serveur par cette page.</p>
+    </section>
+  </div>
+  <footer class="wood footer"><a href="#about">من نحن</a> | <a href="#contact">تواصل</a> | <a href="#privacy">الخصوصية</a><br>MoursahProf – Mourad Sahli</footer>
+</main>
+
+<section id="viewer" hidden>
+  <div class="tools noPrint">
+    <a class="button" href="#catalogue">↩ الوثائق</a><b id="docName"></b>
+    <select id="pageChoice" aria-label="اختيار صفحة"></select>
+    <button id="printDoc">🖨️ طباعة / PDF</button><button id="wordDoc">⬇ Word (.docx)</button>
+    <a id="weeklyShortcut" class="button" href="#niveaux" hidden>📚 الدروس والجذاذات الأسبوعية</a>
+  </div>
+  <div id="sheets"></div>
+</section>
+
+<section id="library" class="wrap" hidden>
+  <a class="button" href="#niveaux">↩ جميع المستويات</a>
+  <div class="panel"><div class="st"><h2 id="libTitle"></h2></div>
+    <div class="subjects" id="subjects"></div>
+    <p style="text-align:center"><label>الأسبوع / Semaine <select id="week"></select></label></p>
+    <div id="folderLinks"></div><div class="resources" id="resources"></div>
+    <details id="editor" class="editor" hidden><summary>إدارة روابط المادة – على حاسوب صاحب الموقع</summary>
+      <p>حطّ رابط المشاهدة العمومي ديال الملف أو المجلد. هادي مسودة محلية حتى تنزّل نسخة الموقع وتنشرها.</p>
+      <form id="linkForm">
+        <select id="kind" aria-label="نوع المورد"><option value="ppt">درس PowerPoint</option><option value="fiche">جذاذة EE</option><option value="schema">خطاطة الدرس</option><option value="folder">مجلد المادة لجميع الأسابيع</option></select>
+        <input id="linkTitle" required maxlength="140" placeholder="عنوان الملف / المجلد">
+        <input id="linkUrl" type="url" required placeholder="https://..." dir="ltr" aria-label="رابط عمومي">
+        <button>إضافة الرابط</button>
+      </form>
+      <div id="manage"></div><button type="button" id="exportSite">⬇ تنزيل index.html محدّث للنشر</button>
+    </details>
+  </div>
+</section>
+<p id="notice" role="status"></p>
+<noscript>باش تفتح وتعمّر الوثائق، خاص JavaScript يكون خدام فالمتصفح.</noscript>
+
+<!-- لا يتضمن هذا الفهرس أي بيانات تلاميذ. فقط روابط الموارد التي يختار الأستاذ نشرها. -->
+<script type="application/json" id="publishedLinks">[]</script>
+<script>
+(()=>{
+"use strict";
+const $=id=>document.getElementById(id);
+const $$=(s,r=document)=>Array.from(r.querySelectorAll(s));
+const pristine=document.documentElement.cloneNode(true);
+const AUTHOR="Mourad Sahli";
+const esc=v=>String(v??"").replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
+const ar=t=>`<span class="a" lang="ar" dir="rtl">${esc(t)}</span>`;
+const bi=t=>{const [f,a]=t.split("|");return `<span lang="fr">${esc(f)}</span>`+(a?` ${ar(a)}`:"")};
+const rowBi=t=>`<span class="bil">${bi(t)}</span>`;
+const sec=t=>`<h3 class="sectionbar">${rowBi(t)}</h3>`;
+const w=(n=1,label="À remplir / للتعبئة")=>`<div class="write lined" contenteditable="plaintext-only" role="textbox" dir="auto" aria-label="${esc(label)}" style="min-height:${n*5}mm"></div>`;
+const inline=()=>'<span class="write inline" dir="auto" contenteditable="plaintext-only" role="textbox" aria-label="À compléter"></span>';
+const repeat=(n,fn)=>Array.from({length:n},(_,i)=>fn(i));
+const table=(headers,rows,cls="")=>`<table class="${cls}"><thead><tr>${headers.map(h=>`<th>${bi(h)}</th>`).join("")}</tr></thead><tbody>${rows.map(r=>`<tr>${r.map(x=>`<td>${x==null?w():x}</td>`).join("")}</tr>`).join("")}</tbody></table>`;
+const blanks=(headers,n,num=true,cls="")=>table(headers,repeat(n,i=>headers.map((_,j)=>num&&j===0?i+1:null)),cls);
+const info=(...ls)=>`<table class="infoTable"><tbody>${repeat(Math.ceil(ls.length/2),i=>`<tr><td>${bi(ls[i*2])}</td><td>${w()}</td>${ls[i*2+1]?`<td>${bi(ls[i*2+1])}</td><td>${w()}</td>`:'<td colspan="2"></td>'}</tr>`).join("")}</tbody></table>`;
+const box=(t,n=2,c="#2f6db5")=>`<div class="box accent" style="--accent:${c}"><strong>${rowBi(t)}</strong>${w(n,t)}</div>`;
+const note=t=>`<div class="notep">${t}</div>`;
+const sig=(roles=["L’enseignant(e)|الأستاذ(ة)","La direction|الإدارة","L’inspection|التفتيش"])=>`<div class="sigs">${roles.map(t=>`<span>${bi(t)}</span>`).join("")}</div>`;
+const chips=a=>a.map(t=>`<span class="pill">${esc(t)}</span>`).join("");
+const ul=a=>`<ul>${a.map(t=>`<li>${esc(t)}</li>`).join("")}</ul>`;
+const cols=(cls,...cells)=>`<div class="${cls}">${cells.join("")}</div>`;
+const checks=a=>a.map(x=>`<label class="pill"><input type="checkbox"> ${bi(x)}</label>`).join(" ");
+const pic=(t="Photo / صورة")=>`<label class="pic"><span>${esc(t)}</span><input type="file" accept="image/png,image/jpeg,image/webp" aria-label="${esc(t)}"></label>`;
+const db=new Map();
+const add=(id,fr,arab,body,theme="")=>{if(!db.has(id))db.set(id,[]);db.get(id).push({fr,arab,body,theme})};
+function sheet(p,i,total){
+ return `<article class="sheet ${p.theme}" lang="fr" dir="ltr">
+ <i class="pin tl"></i><i class="pin tr"></i><i class="pin bl"></i><i class="pin br"></i>
+ <div class="inside"><div class="flagbar"></div>
+ <header class="paperhead"><b>🎓 MoursahProf</b><span>Document pédagogique · ${ar("وثيقة تربوية")}</span></header>
+ <div class="pt"><h1>${esc(p.fr)}</h1><p lang="ar" dir="rtl">${esc(p.arab)}</p></div>
+ <div class="contents">${p.body}</div>
+ <footer class="paperfoot"><b>MoursahProf – ${AUTHOR}</b><span>${i+1} / ${total}</span></footer></div></article>`;
+}
+
+/* 1. Tests de positionnement : trois épreuves + trois grilles. */
+const idTest=info("Nom et prénom|الاسم الكامل","Classe|القسم","Type de test|نوع الرائز","Date|التاريخ")+
+ checks(["Pré-test|قبلي","Intermédiaire|بيني","Post-test|نهائي"]);
+const lettres=a=>`<div class="six letters">${a.map(x=>`<span>${esc(x)}</span>`).join("")}</div>`;
+const stades=["Débutant|مبتدئ","Lettre|حرف","Mot|كلمة","Paragraphe|فقرة","Histoire|قصة"];
+const guide=note(rowBi("Commencer par le paragraphe. Si la lecture est réussie, passer à l’histoire ; sinon proposer les mots puis les lettres.|نبدأ بالفقرة؛ عند النجاح نمر للقصة، وعند التعثر ننتقل إلى الكلمات ثم الحروف."));
+const questions=a=>`<div class="box">${a.map((t,i)=>`<p>${i+1}. ${esc(t)} ${inline()}</p>`).join("")}</div>`;
+add("tarl","TEST DE POSITIONNEMENT – ARABE","رائز تحديد المستوى – اللغة العربية",idTest+guide+
+ sec("1. Lettres : 4 sur 5|الحروف: 4 من 5") + `<div dir="rtl">${lettres("ب م س ر ل د ك ن ف ج ص ع".split(" "))}</div>`+
+ sec("2. Mots : 4 sur 5|الكلمات: 4 من 5")+`<div dir="rtl">${lettres("بابٌ قَلَمٌ دارٌ شَمْسٌ وَرْدَةٌ كِتابٌ سَمَكٌ حَليبٌ مَدْرَسَةٌ شَجَرَةٌ قِطٌّ نافِذَةٌ".split(" "))}</div>`+
+ sec("3. Paragraphe|الفقرة: 3 أخطاء على الأكثر")+`<p class="bigtxt" dir="rtl">ذَهَبَ سامي إِلى السّوقِ مَعَ أَبيهِ. اِشْتَرى تُفّاحًا وَخُبْزًا. رَجَعَ سامي فَرِحًا إِلى البَيْتِ.</p>`+
+ sec("4. Histoire et compréhension|القصة والفهم: جوابان من ثلاثة")+`<p class="bigtxt" dir="rtl">في صَباحٍ جَميلٍ، خَرَجَتْ لَيْلى إِلى الحَديقَةِ. رَأَتْ عُصْفورًا صَغيرًا سَقَطَ مِنْ عُشِّهِ. حَمَلَتْهُ بِلُطْفٍ وَأَعادَتْهُ إِلى الشَّجَرَةِ. فَرِحَتْ أُمُّ العُصْفورِ وَغَرَّدَتْ. قالَتْ لَيْلى: ما أَجْمَلَ أَنْ نُساعِدَ الآخَرينَ!</p><div dir="rtl">${questions(["أين خرجت ليلى؟","ماذا رأت؟","كيف ساعدت العصفور؟"])}</div>`+checks(stades));
+add("tarl","TEST DE POSITIONNEMENT – FRANÇAIS","رائز تحديد المستوى – اللغة الفرنسية",idTest+guide+
+ sec("1. Lettres et sons : 4 sur 5|الحروف والأصوات")+lettres("a m s r i o l p e t u n".split(" "))+
+ sec("2. Mots : 4 sur 5|الكلمات")+lettres("papa lune vélo table moto ami sac robe pomme chat livre école".split(" "))+
+ sec("3. Paragraphe : au plus 3 erreurs|قراءة الفقرة")+`<p class="bigtxt">Ali va à l’école. Il a un sac rouge. Il aime lire des livres avec ses amis.</p>`+
+ sec("4. Histoire et compréhension : 2 sur 3|القصة والفهم")+`<p class="bigtxt">Le matin, Sara va au marché avec sa maman. Elles achètent des pommes, du pain et du lait. Sur le chemin, Sara voit un petit chat qui a faim. Elle lui donne un peu de lait. Le chat est content et Sara aussi.</p>`+
+ questions(["Où va Sara ?","Qu’est-ce qu’elles achètent ?","Que fait Sara pour le chat ?"])+checks(stades));
+const mathLevels=["Débutant|مبتدئ","1 chiffre|رقم","2 chiffres|رقمان","3 chiffres|ثلاثة أرقام","Addition|جمع","Soustraction|طرح","Multiplication|ضرب","Division|قسمة"];
+add("tarl","TEST DE POSITIONNEMENT – MATHÉMATIQUES","رائز تحديد المستوى – الرياضيات",idTest+
+ sec("1. Nombres à un chiffre|الأعداد من رقم واحد")+lettres([7,3,9,5,1,8])+
+ sec("2. Nombres à deux chiffres|الأعداد من رقمين")+lettres([24,58,91,37,60,13])+
+ sec("3. Nombres à trois chiffres|الأعداد من ثلاثة أرقام")+lettres([315,702,480,129,856,947])+
+ sec("4. Opérations|العمليات")+cols("four",...["47 + 36","82 − 27","23 × 4","96 ÷ 3"].map(x=>`<div class="wordcard">${x}${w(3)}</div>`))+
+ sec("5. Problème|مسألة")+cols("two",`<div class="bigtxt">Dans une classe, il y a 18 filles et 15 garçons. Combien d’élèves y a-t-il ?</div>`,`<div class="bigtxt" dir="rtl">في قسم 18 بنتاً و15 ولداً. كم عدد تلاميذ القسم؟</div>`)+box("Réponse et démarche|الجواب وطريقة الحل",4)+checks(mathLevels));
+for(const [f,a,levels] of [["Arabe","العربية",stades],["Français","الفرنسية",stades],["Mathématiques","الرياضيات",mathLevels]]){
+ add("tarl","GRILLE DE DÉPOUILLEMENT – "+f,"شبكة تفريغ الرائز – "+a,info("Classe|القسم","Type de test|نوع الرائز")+
+ table(["N°","Nom et prénom|الاسم الكامل",...levels],[
+ ...repeat(26,i=>[i+1,null,...levels.map(()=>'<input type="checkbox" aria-label="Niveau atteint">')]),
+ ["","Total / المجموع",...levels.map(()=>null)],["","Pourcentage / النسبة",...levels.map(()=>null)]],"dense")+sig(["Enseignant(e)|الأستاذ(ة)","Visa|التأشيرة"]));
+}
+
+/* 2. Étude de cas : même progression en 13 rubriques, sans dossier individuel réel. */
+add("cas","ÉTUDE DE CAS D’UN ÉLÈVE EN DIFFICULTÉ","دراسة حالة – التعريف والسياق",
+ sec("1. Identification de l’élève|التعريف بالمتعلم(ة)")+
+ info("Nom et prénom|الاسم الكامل","Code Massar|رقم مسار","Date de naissance|تاريخ الازدياد","Niveau et groupe|المستوى والفوج","Résidence|السكن","Distance|المسافة","Tuteur|الولي","Téléphone|الهاتف")+
+ sec("2. Situation familiale et sociale|الوضعية الأسرية والاجتماعية")+
+ table(["Rubrique|المحور","Éléments utiles au suivi|معطيات مفيدة للتتبع"],["Père","Mère","Fratrie","Conditions de travail à la maison","Ressources de lecture","Accompagnement disponible"].map(t=>[esc(t),w(2)]))+
+ sec("3. Entretien avec les parents|مقابلة مع الأسرة")+info("Date|التاريخ","Personnes présentes|الحاضرون")+box("Éléments rapportés et accords avec la famille|خلاصة اللقاء وما تم الاتفاق عليه",5));
+const readingLevels=["Débutant","Lettre","Mot simple","Mot avancé","Graphèmes complexes","Phrase","Texte"];
+add("cas","PARCOURS ET DIAGNOSTIC","المسار الدراسي والتشخيص",
+ sec("4. Résultats des évaluations|نتائج التقويمات")+
+ table(["Évaluation|التقويم","Date|التاريخ","Résultat|النتيجة","Appréciation|الملاحظة"],["Test de positionnement","Test de validation","Post-test"].map(x=>[x,null,null,null]))+
+ `<div class="box progressbox"><b>Évolution du niveau de lecture / تطور مستوى القراءة</b>${["Pré-test","Suivi","Post-test"].map(t=>`<div style="display:grid;grid-template-columns:19% 30% 1fr;gap:6px;margin:5px"><span>${t}</span><select aria-label="${t}"><option value="">—</option>${readingLevels.map((l,i)=>`<option value="${i+1}">${l}</option>`).join("")}</select><div style="background:#eee"><div class="progressbar" style="height:100%;width:0;background:#388b69"></div></div></div>`).join("")}</div>`+
+ sec("5. Analyse des difficultés|تحليل التعثرات")+cols("three",box("Scolaires|مدرسية",5),box("Familiales|أسرية",5,"#b73e35"),box("Personnelles|ذاتية",5,"#7046a5"))+
+ sec("6. Synthèse du diagnostic|خلاصة التشخيص")+w(7));
+const comps=["Reconnaître et nommer les lettres","Associer lettre et son","Lire des syllabes simples","Lire des mots simples","Employer le vocabulaire à l’oral","Copier ou écrire des lettres","Numération","Comportement et assiduité"];
+add("cas","PROFIL ET PLAN D’INTERVENTION","ملمح المتعلم وخطة الدعم",
+ sec("7. Profil de l’élève|ملمح المتعلم")+cols("three",box("Points forts|نقط القوة",3,"#2e8b57"),box("Besoins prioritaires|الحاجات",3,"#b03a45"),box("Leviers|الروافع",3))+
+ sec("8. Grille des compétences|شبكة تقييم الكفايات")+table(["Compétence|الكفاية","Niveau actuel (1–4)|الحالي","Niveau visé (1–4)|المستهدف"],comps.map(x=>[x,null,null]),"dense")+
+ sec("9. Objectifs visés|الأهداف المستهدفة")+blanks(["Échéance|الأجل","Objectif|الهدف","Indicateur de réussite|مؤشر النجاح"],3,false)+
+ sec("10. Actions pédagogiques|الإجراءات التربوية")+w(5));
+add("cas","SUIVI, OBSERVATIONS ET BILAN","التتبع والملاحظات والحصيلة",
+ sec("11. Calendrier de suivi|جدولة التتبع")+blanks(["Date|التاريخ","Évaluation ou action|التقويم أو الإجراء","Résultat|النتيجة","Visa|التأشيرة"],9,false)+
+ sec("12. Observations|ملاحظات الأستاذ(ة)")+cols("two",box("Lecture et langue|القراءة واللغة",4),box("Attitude et comportement|المشاركة والسلوك",4))+
+ sec("13. Bilan|الحصيلة")+table(["Rubrique|المحور","Observation|الملاحظة"],["Acquis","Acquis à consolider","Contexte","Perspectives","Décision et prochaine évaluation"].map(x=>[x,null]))+sig());
+
+/* 3. Rapport d’absence prolongée et fiche de suivi. */
+add("abs","RAPPORT SUR L’ABSENCE PROLONGÉE D’UN ÉLÈVE","تقرير حول غياب متعلم(ة)",
+ sec("1. Identification|التعريف بالمتعلم")+info("Nom et prénom|الاسم","Massar|مسار","Naissance|الازدياد","Classe / groupe|القسم / الفوج","Lieu de résidence|السكن","Distance|المسافة","Tuteur|الولي","Contact|التواصل")+
+ sec("2. Constat|معاينة الغياب")+`<div class="alertp">${w(2,"Constat")}</div>`+
+ table(["Étape|المرحلة","Période|الفترة","Présence|الحضور"],["Positionnement","Soutien intensif","Évaluations de suivi","Enseignement explicite"].map(t=>[t,null,null]))+
+ `<p>Nombre de jours / مجموع أيام الغياب : ${inline()}</p>`+
+ sec("3. Démarches entreprises|الإجراءات المتخذة")+blanks(["Date|التاريخ","Démarche|الإجراء","Résultat|النتيجة"],4,false)+
+ sec("4. Causes de l’absence|أسباب الغياب")+cols("two",box("Motif communiqué|السبب المصرح به",2),box("Éléments à vérifier|معطيات للتحقق",2))+
+ sec("5. Conséquences et propositions|الآثار والمقترحات")+cols("two",box("Conséquences|الآثار",2),box("Propositions|المقترحات",2))+sig());
+add("abs","FICHE DE SUIVI DES ABSENCES","ورقة تتبع الغياب",info("Élève|المتعلم(ة)","Période|الفترة")+
+ sec("Relevé des absences par semaine|بيان الغياب الأسبوعي")+blanks(["Semaine|الأسبوع","Activité|النشاط","Lun","Mar","Mer","Jeu","Ven","Sam","Total|المجموع"],11,false,"dense")+
+ sec("Contacts avec la famille|التواصل مع الأسرة")+blanks(["Date|التاريخ","Moyen|الوسيلة","Personne contactée|المعني","Réponse|الجواب"],4,false)+
+ box("Observations de l’enseignant(e)|ملاحظات الأستاذ(ة)",4)+box("Bilan et suite à donner|الحصيلة والمتابعة",4)+sig());
+add("lettre","RAPPORT D’ABSENCE – CORRESPONDANCE","مراسلة بشأن غياب متعلم(ة)",cols("two",
+ `<div class="box">À Monsieur / Madame le Directeur<p><b>Objet : Rapport d’absence</b></p><p>J’ai l’honneur de vous informer que l’élève ${inline()} inscrit(e) en ${inline()} s’est absenté(e) du ${inline()} au ${inline()}, soit ${inline()} jours.</p><p>Justificatif : ${inline()}</p><p>Mesures prises : ${w(3)}</p><p>Veuillez agréer mes salutations distinguées.</p></div>`,
+ `<div class="box" dir="rtl">إلى السيد(ة) مدير(ة) المؤسسة<p><b>الموضوع: تقرير حول غياب متعلم(ة)</b></p><p>يشرفني أن أخبركم أن المتعلم(ة) ${inline()} المسجل(ة) بالقسم ${inline()} قد تغيب(ت) من ${inline()} إلى ${inline()}، أي ما مجموعه ${inline()} يوماً.</p><p>مبرر الغياب: ${inline()}</p><p>الإجراءات المتخذة: ${w(3)}</p><p>وتفضلوا بقبول فائق الاحترام.</p></div>`)+sec("Historique des absences|سجل الغياب")+blanks(["Date","Durée","Motif","Justification","Mesure"],6,false)+sig());
+add("lettre","SUIVI MENSUEL DES ABSENCES","التتبع الشهري للغياب",info("Mois|الشهر","Classe|القسم")+
+ blanks(["N°","Nom et prénom|الاسم","Jours|أيام الغياب","Justifiées|مبررة","Non justifiées|غير مبررة","Mesure|الإجراء"],26,true,"dense"));
+
+/* 4. Fréquentation et diagramme. */
+const mois=["Oct.","Nov.","Déc.","Janv.","Févr.","Mars","Avr.","Mai","Juin"];
+const moisAR=["أكتوبر","نونبر","دجنبر","يناير","فبراير","مارس","أبريل","ماي","يونيو"];
+const palette=["#aa386c","#2f6db5","#bf931d","#278154"];
+const fqHeader=["N°","Nom / الاسم",...repeat(31,i=>String(i+1)),"P","A","%"];
+add("freq","FRÉQUENTATION MENSUELLE","سجل المواظبة الشهري",info("Classe|القسم","Mois|الشهر")+
+ `<table class="tiny"><colgroup><col style="width:3%"><col style="width:18%">${"<col>".repeat(34)}</colgroup><thead><tr>${fqHeader.map(x=>`<th>${x}</th>`).join("")}</tr></thead><tbody>`+
+ repeat(28,i=>`<tr><td>${i+1}</td>${repeat(35,()=>`<td>${w()}</td>`).join("")}</tr>`).join("")+
+ ["Présents","Absents"].map(x=>`<tr><td colspan="2">${x}</td>${repeat(34,()=>`<td>${w()}</td>`).join("")}</tr>`).join("")+
+ `</tbody></table>`+info("Effectif|العدد","Jours de classe|أيام الدراسة","Total des présences|مجموع الحضور","Total des absences|مجموع الغياب","Absences justifiées|الغياب المبرر","Taux de fréquentation|نسبة المواظبة")+
+ note("P : présent · A : absent · J : absence justifiée · R : retard. Taux mensuel = présences ÷ (effectif × jours de classe) × 100."));
+add("freq","BILAN ANNUEL DE LA FRÉQUENTATION","الحصيلة السنوية للمواظبة",
+ `<div class="annual">${table(["Groupe|الفوج",...mois.map((m,i)=>m+"|"+moisAR[i]),"Moy.|المعدل"],[
+ ...repeat(4,(_,)=>[w(),...repeat(9,()=>'<input class="rate" type="number" min="0" max="100" step="0.1" aria-label="Taux du mois">'),'<b class="rmean"></b>']),
+ ["Moyenne",...repeat(9,()=>'<b class="cmean"></b>'),'<b class="overall"></b>']],"dense")}
+ ${sec("Diagramme mensuel (%)|مبيان نسب المواظبة")}<svg class="graph" viewBox="0 0 640 250" role="img" aria-label="Diagramme des taux saisis"></svg>
+ ${palette.map((c,i)=>`<span style="color:${c}">■ Ligne ${i+1} </span>`).join("")}</div>`+
+ sec("Analyse|التحليل")+info("Mois le plus fréquenté|أعلى نسبة","Mois le moins fréquenté|أدنى نسبة")+box("Causes observées et actions|الملاحظات والإجراءات",5)+note("Saisir les taux de 0 à 100. Une case vide n’entre pas dans la moyenne. / الخانة الفارغة لا تدخل في حساب المعدل."));
+function drawAnnual(el){
+ const v=$$(".rate",el).map(x=>x.value!==""&&x.validity.valid?+x.value:null);
+ const avg=a=>{const z=a.filter(x=>x!==null);return z.length?(z.reduce((s,n)=>s+n,0)/z.length).toFixed(1)+" %":""};
+ $$(".rmean",el).forEach((x,i)=>x.textContent=avg(v.slice(9*i,9*i+9)));
+ $$(".cmean",el).forEach((x,i)=>x.textContent=avg(v.filter((_,j)=>j%9===i)));
+ el.querySelector(".overall").textContent=avg(v);
+ let g=repeat(6,i=>`<path d="M36 ${208-i*38}h594" stroke="#d7d3cb"/><text x="1" y="${211-i*38}" font-size="9">${i*20}%</text>`).join("");
+ mois.forEach((m,i)=>{g+=`<text x="${62+i*65}" y="228" text-anchor="middle" font-size="11">${m}</text>`;
+ for(let j=0;j<4;j++){const n=v[j*9+i];if(n!==null)g+=`<rect x="${38+i*65+j*13}" y="${208-n*1.9}" width="11" height="${n*1.9}" fill="${palette[j]}"><title>${n}%</title></rect>`}});
+ el.querySelector("svg").innerHTML=g;
+}
+
+/* 5. Cahier journal : aucune date préremplie, pas de champ date. */
+add("journal","CAHIER JOURNAL","المذكرة اليومية",info("Classe|القسم","Unité|الوحدة")+
+ table(["Séance|الحصة","Horaire|التوقيت","Matière|المادة","Objectif|الهدف","Déroulement et activités|المراحل والأنشطة","Évaluation|التقويم"],
+ repeat(6,i=>[i+1,w(2),w(2),w(3),w(3),w(2)]))+
+ cols("two",box("Difficultés et soutien|التعثرات والدعم",5),box("Devoirs et prolongements|الواجبات والامتدادات",5))+box("Observations|ملاحظات",4)+sig(["Enseignant(e)|الأستاذ(ة)"]));
+add("ee","FICHE DE SÉANCE – ENSEIGNEMENT EXPLICITE","جذاذة التدريس الصريح",info("Matière|المادة","Classe|القسم","Unité|الوحدة","Séance|الحصة","Titre|عنوان الدرس","Durée|المدة")+
+ cols("two",box("Objectif d’apprentissage|هدف التعلم",2),box("Prérequis et matériel|المكتسبات والوسائل",2))+
+ sec("Étapes de la séance|مراحل الحصة")+table(["Phase|المرحلة","Actions de l’enseignant(e)|تدخلات الأستاذ","Activité de l’élève|نشاط المتعلم"],
+ [["Ouverture / التمهيد",w(3),w(3)],["Modelage : je montre / النمذجة",w(3),w(3)],["Pratique guidée / الممارسة الموجهة",w(3),w(3)],["Pratique autonome / الممارسة المستقلة",w(3),w(3)],["Vérification et clôture / التقويم والاختتام",w(3),w(3)]])+
+ box("Différenciation et soutien|التمايز والدعم",3));
+
+/* 6. Quatre EDT : même grille matin / après-midi, heures et matières vides. */
+const jours=["Lundi","Mardi","Mercredi","Jeudi","Vendredi","Samedi"];
+const joursAr=["الاثنين","الثلاثاء","الأربعاء","الخميس","الجمعة","السبت"];
+for(const nb of [4,2])for(const arabe of [false,true]){
+ const days=arabe?joursAr:jours;
+ let body="";
+ for(const [idx,period] of (arabe?["الصباح","بعد الزوال"]:["Matin","Après-midi"]).entries()){
+   if(idx)body+='<tr><td class="cutrow" colspan="8"></td></tr>';
+   for(let r=0;r<5;r++){
+    body+="<tr>"+(r===0?`<td rowspan="5" class="session">${period}</td>`:"");
+    if(r===2)body+=`<td colspan="7" class="pause">${arabe?"استراحة":"Pause"}</td>`;
+    else body+=`<td>${w(1,"Horaire / التوقيت")}</td>`+repeat(6,()=>`<td>${w(1,"Séance / الحصة")}</td>`).join("");
+    body+="</tr>";
+   }
+ }
+ add("edt",arabe?"استعمال الزمن – نموذج عربي":"EMPLOI DU TEMPS – MODÈLE FRANÇAIS",
+ `${nb} ${nb===2?"فوجان / 2 groupes":"أفواج / 4 groupes"}`,
+ `<div dir="${arabe?"rtl":"ltr"}">${info("Année|الموسم","Matière|المادة","Classe|القسم","Enseignant(e)|الأستاذ(ة)")}
+ <div>${repeat(nb,i=>`<span class="pill" style="border-color:${palette[i]}">${arabe?"الفوج":"Groupe"} ${i+1} : ${inline()}</span>`).join("")}</div>
+ <table class="sched"><thead><tr><th rowspan="2"></th><th>${arabe?"التسلسل":"Séquence"}</th>${repeat(6,i=>`<th>${i+1}</th>`).join("")}</tr>
+ <tr><th>${arabe?"التوقيت":"Horaire"}</th>${days.map(d=>`<th>${d}</th>`).join("")}</tr></thead><tbody>${body}</tbody></table>${sig()}</div>`,"edt land");
+}
+
+/* 7. Les coins : écriture, oral, langue, jeux et vie de classe. */
+const theme="Mon quartier et mes amis";
+const hc=(fr,a,body)=>add("coins",fr,a,body,"hanging");
+const words=["le quartier","l’épicerie","la poste","à côté de","en face de","derrière","devant","loin","le voisin","gentil","poli","sympa","grand","la farine","le sucre","un kilo","un litre","inviter","aider","remercier"];
+hc("✍ COIN D’ÉCRITURE","ركن الكتابة",cols("five",...["💭 Je pense","📝 J’écris","👀 Je relis","✏️ Je corrige","🎤 Je présente"].map((x,i)=>`<div class="labelcard"><b>${i+1}</b>${esc(x)}</div>`))+
+ sec("Ma boîte à mots – Unité 1|رصيدي المعجمي")+chips(words)+sec("Pour relier les phrases|روابط الجمل")+chips(["et","mais","puis","ensuite","parce que","qui","d’abord","enfin"])+
+ cols("two",`<div class="box"><b>Débuts de phrases</b>${ul(["J’habite dans un quartier…","À côté de ma maison, il y a…","Mon voisin est…","Demain, j’irai…","Je voudrais acheter…"])}</div>`,
+ `<div class="box"><b>Je n’oublie pas</b>${ul(["La majuscule au début.","Le point à la fin.","Les accents : é, è.","Les accords : gentil, gentille.","J’écris proprement."])}</div>`));
+hc("J’ÉCRIS SUR MON QUARTIER","أكتب عن حيّي",info("Prénom|الاسم","Classe|القسم")+cols("two",box("Je dessine mon quartier|أرسم حيّي",10),box("Où j’habite ? Qu’y a-t-il à côté ?|أفكاري",10))+box("Mon texte|نصي",9)+
+ table(["Critère|المعيار","Moi|تقييمي","L’enseignant(e)|رأي الأستاذ"],["J’utilise les mots du quartier.","Je mets les majuscules et les points.","J’utilise à côté de / en face de.","Mon texte comporte au moins cinq phrases."].map(x=>[x,null,null])));
+const dialogues=[["Où se trouve l’épicerie du quartier ?","Elle se trouve à côté de la poste."],["Que veux-tu acheter pour ta recette ?","Je voudrais un kilo de farine."],["Comment est ton voisin ?","Mon voisin est très gentil."],["Pourquoi vas-tu voir ton voisin ?","Je vais le voir pour l’inviter."],["Iras-tu demain à l’école ?","Oui, j’irai à l’école."],["Qui est-ce ?","C’est le voisin qui habite en face."]];
+hc("🗣 COIN DE L’ORAL","ركن التعبير الشفهي",note("Je pose une question, mon camarade répond. Ensuite, nous échangeons les rôles.")+dialogues.map(([q,a])=>`<div class="bubble"><b>❓ ${q}</b></div><div class="bubble" style="margin-left:14mm;border-color:#257d76">💬 ${a}</div>`).join(""));
+hc("JE PRÉSENTE MON QUARTIER","أقدّم حيّي",info("Prénom|الاسم","Classe|القسم")+sec("Mon canevas|أحضّر تقديمي")+
+ ["Bonjour, je m’appelle","J’habite dans le quartier","À côté de ma maison, il y a","En face de l’école, il y a","Mon voisin est","J’aime mon quartier parce que"].map(x=>`<p>${x} ${inline()}</p>`).join("")+"<p>Merci de m’avoir écouté !</p>"+
+ table(["Je pense à…","Oui","Pas encore"],["Parler clairement.","Regarder mes camarades.","Me tenir droit.","Faire des phrases complètes.","Parler pendant une minute."].map(x=>[x,'<input type="checkbox">','<input type="checkbox">']))+box("L’avis de mon camarade|رأي زميلي",4));
+hc("🔤 COIN DE LA LANGUE","ركن اللغة",cols("two",
+ `<div class="box"><b>Aller au futur</b>${table(["Pronom","Verbe"],[["J’","irai"],["Tu","iras"],["Il / Elle","ira"],["Nous","irons"],["Vous","irez"],["Ils / Elles","iront"]])}Demain, j’irai à l’épicerie.</div>`,
+ `<div class="box"><b>Vouloir au conditionnel</b>${table(["Pronom","Verbe"],[["Je","voudrais"],["Tu","voudrais"],["Il / Elle","voudrait"],["Nous","voudrions"],["Vous","voudriez"],["Ils / Elles","voudraient"]])}Je voudrais un kilo de sucre, s’il vous plaît.</div>`)+
+ sec("Le pronom relatif qui|الضمير الموصول")+`<div class="bigtxt">C’est le voisin. Le voisin habite en face.<br>→ C’est le voisin <b>qui</b> habite en face.</div>`+chips(["gentil → gentille","poli → polie","grand → grande"])+
+ sec("Les pronoms COD|ضمائر المفعول به")+ul(["Je vois mon voisin → Je le vois.","J’invite ma voisine → Je l’invite.","J’aide mes amis → Je les aide."])+sec("Pour se repérer|لتحديد الموقع")+chips(["à gauche de","à droite de","devant","derrière","en face de","à côté de","loin de","près de"]));
+const hiddenWords=[["QUARTIER",0,1,0],["EPICERIE",2,3,0],["VOISIN",4,0,0],["FARINE",6,5,0],["INVITER",8,2,0],["POSTE",10,6,0],["GENTIL",0,11,1],["SUCRE",6,0,1],["LAIT",7,11,1],["AIDER",11,0,0]];
+const lettersGrid=repeat(12,r=>repeat(12,c=>"AZERTYUIOPQSDFGHJKLMWXCVBN"[(r*7+c*13+r*c)%26]));
+hiddenWords.forEach(([word,r,c,down])=>[...word].forEach((ch,i)=>lettersGrid[r+(down?i:0)][c+(down?0:i)]=ch));
+hc("🎲 LES MOTS CACHÉS DU QUARTIER","ركن الألعاب – الكلمات المخفية",note("Cherche les dix mots de gauche à droite ou de haut en bas.")+
+ chips(hiddenWords.map(x=>x[0]))+`<table class="ws"><tbody>${lettersGrid.map(r=>`<tr>${r.map(x=>`<td>${x}</td>`).join("")}</tr>`).join("")}</tbody></table>`+box("J’emploie trois mots trouvés dans une phrase|أوظف ثلاث كلمات",4));
+const riddles=[["🏪","On y achète le sucre, le lait et la farine.","L’épicerie"],["📮","On y apporte les lettres et les colis.","La poste"],["🏠","J’habite à côté de chez toi.","Le voisin"],["🥚","On me casse pour faire un gâteau.","L’œuf"],["🥛","Je suis blanc et je me bois au petit-déjeuner.","Le lait"],["💌","Je dis : « Viens à ma fête ! » Quel verbe est-ce ?","Inviter"]];
+hc("QUI SUIS-JE ?","أحاجي الحي",cols("two",...riddles.map(([ic,q],i)=>`<div class="cutcard"><b>Devinette ${i+1}</b><p>${q}</p>${w(2)}✂ ${ic}</div>`))+box("J’invente une devinette|أبتكر أحجية",4)+note("Réponses à plier : "+riddles.map(x=>x[2]).join(" · ")));
+hc("📅 COIN VIE DE CLASSE","ركن الحياة الصفية",info("Jour|اليوم","Date|التاريخ","Mois|الشهر","Saison|الفصل")+sec("Quel temps fait-il ?|كيف هو الطقس؟")+chips(["☀️ Il fait beau","⛅ Il y a des nuages","🌧 Il pleut","💨 Il y a du vent","❄️ Il fait froid"])+
+ cols("two",box("Le mot du jour|كلمة اليوم",4),`<div class="box"><b>La phrase de la semaine</b><p>« L’épicerie se trouve à côté de la poste. »</p>${w(2)}</div>`)+sec("Comment je me sens ?|كيف أشعر؟")+chips(["😄 Content","😌 Calme","😴 Fatigué","😢 Triste","😠 En colère"])+box("Objectif de la journée|هدف اليوم",3));
+hc("LES RESPONSABLES DE LA SEMAINE","مسؤوليات الأسبوع",table(["Responsabilité|المهمة","S1","S2","S3","S4"],["Coin de lecture","Propreté","Plantes","Matériel","Tableau","Porte et lumières","Fiche de prêt","Entraide"].map(t=>[t,null,null,null,null]))+
+ sec("Anniversaires du trimestre|أعياد الميلاد")+blanks(["Octobre","Novembre","Décembre"],4,false)+box("Les étoiles de la classe : entraide, lecture, progrès|نجوم القسم",4));
+
+/* 8. Cahier des groupes différenciés – Unité 1. */
+const gh=["A – Soutien|الدعم","B – Consolidation|التثبيت","C – Approfondissement|التعميق"];
+const groupPage=(f,a,b)=>add("groupes",f,a,b,"blue");
+groupPage("CAHIER DES GROUPES","دفتر المجموعات المتمايزة",`<div class="bluecover"><h2>PÉDAGOGIE DIFFÉRENCIÉE</h2><p>UNITÉ 1 · ${theme}</p><p>Français – Enseignement explicite</p>${chips(["🟥 Groupe A – Soutien","🟨 Groupe B – Consolidation","🟩 Groupe C – Approfondissement"])}</div>`+info("Unité|الوحدة","Période|الفترة","Classe|القسم","Année scolaire|الموسم"));
+groupPage("PRINCIPES DE LA DIFFÉRENCIATION","تنظيم مجموعات الحاجة",
+ table(["Groupe","Profil des élèves","Démarche privilégiée","Supports"],[
+ ["A — Soutien","Difficultés de déchiffrage, vocabulaire limité, compréhension orale fragile.","Modelage renforcé, tâches courtes, travail guidé et tutorat.","Images, étiquettes, ardoise, mots-outils."],
+ ["B — Consolidation","Acquis partiels ; lit des phrases simples et produit avec aide.","Pratique guidée puis autonome, exercices à trous, binômes.","Livret, fiches à compléter, textes courts."],
+ ["C — Approfondissement","Lecture fluide, bonne compréhension, production autonome.","Tâches ouvertes, production et tutorat.","Textes complets, canevas de production."]])+
+ sec("Critères de constitution des groupes|معايير تكوين المجموعات")+table(["Critère",...gh],[["Diagnostic indicatif","Moins de 50 %","50 % à 79 %","80 % ou plus"],["Lecture","Syllabes ou mots isolés","Phrases simples","Texte lu avec fluidité"],["Oral","Répète des mots","Répond par une phrase","S’exprime librement"],["Écriture","Copie","Complète des phrases","Rédige un court paragraphe"]],"ga")+
+ sec("Organisation de la séance – 65 min|تنظيم الحصة")+table(["Phase","Organisation"],[["Collective","Modelage puis pratique guidée pour toute la classe."],["Différenciée","A avec l’enseignant ; B et C sur des fiches, en binômes ou en autonomie."],["Mise en commun","Correction, valorisation des productions et contrôle de maîtrise."]])+note("Les groupes sont souples et sont réajustés selon les progrès observés."));
+groupPage("COMPOSITION DES GROUPES DE BESOIN","تشكيل مجموعات الحاجة",repeat(4,i=>sec(`Classe ${i+1} : à compléter|القسم ${i+1}`)+blanks(gh,8,false,"dense ga")).join(""));
+const weekly=[
+ ["Où se trouve l’épicerie du quartier ?","Aller au futur","Paragraphe descriptif du quartier","À gauche, à droite, l’épicerie, derrière, en face de, la poste, le quartier, devant, loin, à côté.",[
+ ["Oral et vocabulaire","Associer dix images à des mots. Montrer les lieux sur un plan.","Répondre : « Elle est à côté de… »","Décrire le chemin de l’école à l’épicerie en trois ou quatre phrases."],
+ ["Point de langue","Choisir j’irai, tu iras, il ira avec des étiquettes.","Compléter des phrases avec aller au futur.","Produire des phrases : « Demain, j’irai… »"],
+ ["Lecture","Lire les mots du thème par syllabation et les mots-outils.","Lire des phrases et répondre par vrai ou faux.","Lire le texte et répondre à des questions ouvertes."],
+ ["Écriture","Copier deux phrases modèles.","Compléter un paragraphe à trous.","Rédiger cinq lignes sur le quartier."]]],
+ ["Que veux-tu acheter pour ta recette ?","Vouloir au conditionnel","Liste des courses","La confiture, les œufs, la recette, le chocolat, un kilo, un litre, la levure, le lait, la farine, le sucre.",[
+ ["Oral et vocabulaire","Nommer les ingrédients à partir d’images ; jeu « Montre-moi ».","Répondre : « Je voudrais… »","Jouer la scène entre l’épicier et le client, avec quantités."],
+ ["Point de langue","Choisir je voudrais ou tu voudrais.","Conjuguer vouloir dans des phrases.","Transformer des demandes au conditionnel de politesse."],
+ ["Lecture","Lire les étiquettes d’ingrédients et de quantités.","Lire une recette et ordonner ses étapes.","Répondre à des questions sur les quantités et les étapes."],
+ ["Écriture","Copier trois ingrédients et leurs quantités.","Compléter une liste des courses.","Rédiger une liste et une phrase par achat."]]],
+ ["Comment est le voisin ?","Le pronom relatif qui","Portrait d’un ami","Poli, sympa, maigre, gros, gentil, méchant, le voisin, depuis longtemps, connaître, joli, grand.",[
+ ["Oral et vocabulaire","Associer adjectifs et images.","Répondre : « Mon voisin est… »","Décrire l’aspect et le caractère du voisin."],
+ ["Point de langue","Relier deux parties de phrase avec qui.","Compléter des phrases avec qui.","Réunir deux phrases en une seule avec qui."],
+ ["Lecture","Lire des adjectifs au masculin et au féminin.","Lire un portrait et entourer les adjectifs.","Répondre et justifier à partir du portrait."],
+ ["Écriture","Compléter : « Mon voisin est… »","Accorder les adjectifs dans des phrases.","Rédiger le portrait d’un ami en cinq lignes."]]],
+ ["Pourquoi vas-tu voir ton voisin ?","Les pronoms COD : le, la, les","Billet d’invitation","Déménager, heureux, aider, inviter, se souvenir, consoler, se voir, appeler, répondre, remercier.",[
+ ["Oral et vocabulaire","Mimer et nommer les verbes aider, inviter, appeler.","Répondre : « Je vais le voir pour… »","Jouer un dialogue : inviter, accepter, remercier."],
+ ["Point de langue","Remplacer un nom par le ou la à l’aide d’images.","Remplacer le COD par un pronom.","Répondre en employant le pronom COD."],
+ ["Lecture","Lire : voisin, fruits, livre, maman, porte, maison.","Repérer qui, quand et où dans une invitation.","Lire, répondre et faire des déductions."],
+ ["Écriture","Copier un billet en changeant le prénom.","Compléter un billet d’invitation.","Rédiger une invitation complète."]]]
+];
+const suiviGroup=()=>sec("Suivi des groupes|تتبع المجموعات")+table(["Classe","Groupe","Effectif","Maîtrise","Élèves à revoir","Changement de groupe"],repeat(12,i=>[w(),["A","B","C"][i%3],null,null,null,null]),"dense");
+weekly.forEach(([titre,lang,prod,voc,acts],i)=>groupPage("SEMAINE "+(i+1)+" – "+titre,"أنشطة الأسبوع "+(i+1),
+ `<div class="notep"><b>Point de langue :</b> ${lang}<br><b>Écriture :</b> ${prod}<br><b>Vocabulaire :</b> ${voc}</div>`+
+ note("Objectif commun : au moins 80 % de maîtrise des apprentissages ciblés, avec des tâches adaptées.")+
+ table(["Domaine",...gh],acts,"ga")+suiviGroup()+box("Observations|ملاحظات",2)));
+groupPage("SEMAINE 5 – RÉVISION DIFFÉRENCIÉE","المراجعة المتمايزة",table(["Domaine",...gh],[
+ ["Vocabulaire","Jeu des mots invisibles avec images.","Classer les mots par thème, puis les employer.","Faire deviner un mot sans le nommer."],
+ ["Oral","Répondre aux quatre questions avec un modèle.","Jeu de rôle en binôme : épicerie, voisin.","Présenter son quartier en une minute."],
+ ["Langue","Choisir la bonne forme au futur ou au conditionnel.","Exercices sur le futur, le conditionnel, qui et les COD.","Produire une phrase avec chaque notion."],
+ ["Lecture","Lecture flash de mots et phrases courtes.","Lire les textes de l’unité et répondre au QCM.","Lire un texte nouveau et expliquer ses réponses."],
+ ["Écriture","Copier et compléter des phrases.","Compléter un paragraphe sur le quartier.","Écrire six à huit lignes sur son quartier."]],"ga")+suiviGroup()+box("Observations|ملاحظات",2));
+groupPage("SEMAINE 6 – ÉVALUATION, BILAN ET REMÉDIATION","التقويم والحصيلة والمعالجة",sec("Résultats par groupe|نتائج المجموعات")+table(["Classe","Groupe","Effectif","Oral","Langue","Lecture","Écriture","Moyenne"],repeat(12,i=>[w(),["A","B","C"][i%3],null,null,null,null,null,null]),"dense")+
+ sec("Plan de remédiation|خطة المعالجة")+table(["Difficulté repérée",...gh],["Vocabulaire","Points de langue","Lecture","Écriture"].map(x=>[x,null,null,null]),"ga")+box("Bilan de l’unité|حصيلة الوحدة",4)+sig());
+
+/* 9. Rapports : occasion et contenu à renseigner, pas de fête imposée. */
+for(const label of ["Activité ou fête","Sortie ou rencontre"]){
+ add("rap","RAPPORT D’ACTIVITÉ – "+label,"تقرير نشاط حسب المناسبة",info("Titre|العنوان","Occasion|المناسبة","Date|التاريخ","Horaire|التوقيت","Lieu|المكان","Participants|المشاركون","Encadrement|التأطير","Effectif|العدد")+
+ sec("1. Objectifs|الأهداف")+w(3)+sec("2. Déroulement|سير النشاط")+blanks(["Horaire|التوقيت","Activité|النشاط","Description|الوصف"],7,false)+
+ cols("two",box("Points positifs|نقط القوة",2,"#298455"),box("Difficultés|الصعوبات",2,"#b63b35"))+box("Recommandations|التوصيات",2)+
+ sec("Photos de l’activité|صور النشاط")+cols("four",...repeat(4,()=>pic()))+box("Conclusion|الخلاصة",2)+sig());
+}
+add("rap","RAPPORT D’INCIDENT","تقرير حادثة",info("Date|التاريخ","Heure et lieu|الزمان والمكان","Personnes concernées|المعنيون","Personnes présentes|الحاضرون")+box("Description factuelle|وصف الوقائع",6)+box("Mesures prises|الإجراءات المتخذة",4)+box("Communication|التواصل",3)+box("Suivi proposé|المتابعة المقترحة",3)+sig());
+add("rap","ABSENCE ET CONTINUITÉ PÉDAGOGIQUE","تقرير غياب الأستاذ(ة)",info("Début|البداية","Fin|النهاية","Durée|المدة","Référence|المرجع")+box("Classes et séances concernées|الأقسام والحصص المعنية",4)+box("Continuité pédagogique|استمرارية التعلمات",6)+box("Consignes et ressources transmises|التوجيهات والموارد",4)+box("Suivi|التتبع",3)+sig());
+add("pv","TABLEAU DES RÉUNIONS PÉDAGOGIQUES","جدول الاجتماعات التربوية",
+ table(["N°","Date|التاريخ","Ordre du jour|جدول الأعمال","Animation|التنشيط","Décisions|القرارات","Visa"],[
+ "Bilan du soutien intensif et constitution des groupes","Mise en œuvre de l’enseignement explicite","Résultats de l’évaluation et remédiation","Bilan du semestre et différenciation","Plan de soutien","Lecture et production écrite","Préparation des évaluations finales","Bilan annuel et perspectives"
+ ].map((x,i)=>[i+1,w(2),x,null,w(2),null]))+sig());
+add("pv","COMPTE RENDU DE RÉUNION","محضر اجتماع تربوي",info("Date|التاريخ","Lieu|المكان","Objet|الموضوع","Animation|التنشيط")+box("Présents et absents|الحاضرون والمتغيبون",3)+box("Ordre du jour|جدول الأعمال",4)+box("Synthèse des échanges|ملخص النقاش",5)+table(["Décision|القرار","Responsable|المسؤول","Échéance|الأجل","Suivi|التتبع"],repeat(5,()=>[null,null,null,null]))+sig());
+add("garde","TABLEAU DE GARDE","جدول الحراسة",info("Période|الفترة","Groupe|الفوج")+
+ table(["Mois|الشهر","Jour et horaire 1|اليوم والتوقيت","Jour et horaire 2|اليوم والتوقيت","Total|المجموع","Signature|التوقيع"],
+ ["Septembre","Octobre","Novembre","Décembre","Janvier","Février","Mars","Avril","Mai","Juin"].map(x=>[x,w(2),w(2),null,null]))+
+ note("Missions : accueil, surveillance de la cour et des entrées, sécurité à la sortie et signalement des incidents. / استقبال المتعلمين وحراسة الساحة وتتبع الدخول والخروج.")+sig());
+add("rec","RECENSEMENT DES ÉLÈVES","إحصاء التلاميذ",sec("Effectifs|الأعداد")+blanks(["Groupe|الفوج","Effectif","Filles","Garçons","Redoublants","Départs"],5,false)+
+ sec("Répartition par âge|التوزيع حسب السن")+blanks(["Groupe","≤ 9","10","11","12","13","14","≥ 15","Total"],5,false)+
+ sec("Mouvements et suivi|الحركات والتتبع")+blanks(["Référence|مرجع","Groupe|الفوج","Situation|الوضعية","Observation|ملاحظة"],5,false)+sig());
+add("ref","LISTE DES RÉFÉRENCES ET FORMATIONS","لائحة المراجع والتكوينات",info("Matière|المادة","Classe|القسم")+
+ table(["N°","Type|النوع","Titre du document|عنوان المرجع","Édition|الطبعة","Visa"],[
+ ["Élève","Livret de l’élève"],["Élève","Cahier d’activités"],["Élève","Recueil de lecture offerte"],["Enseignant","Guide de l’enseignant"],["Soutien intensif","Cadre de référence du soutien intensif (TaRL)"],["Soutien intensif","Livret de soutien – Parcours 1"],["Soutien intensif","Guide pédagogique TaRL"],["Enseignement explicite","Cadre de référence de l’enseignement explicite"],["Programmes","Programme et orientations pédagogiques du primaire"]
+ ].map(([a,b],i)=>[i+1,a,b,null,null]))+
+ sec("Formations suivies|التكوينات")+table(["Formation|التكوين","Dates|التواريخ","Lieu|المكان","Encadrement|التأطير"],[["Soutien intensif : positionnement, paliers, suivi et validation",null,null,null],["Enseignement explicite : modelage, pratique guidée et autonome",null,null,null],[null,null,null,null]])+sig());
+const roles=["Président(e)","Vice-président(e)","Secrétaire","Vice-secrétaire","Trésorier(ère)","Vice-trésorier(ère)","Conseiller(ère) 1","Conseiller(ère) 2"];
+const activities=[["Octobre","Assemblée générale et élection du bureau"],["Novembre","Embellissement de la classe et des coins"],["Novembre","Activités culturelles et fêtes nationales"],["Décembre","Collecte de livres pour la bibliothèque"],["Février","Propreté et plantation d’arbres"],["Mars","Exposition des productions"],["Avril","Concours de lecture"],["Mai","Action de solidarité"],["Juin","Bilan moral et financier et fête de fin d’année"]];
+const office=i=>`<div class="labelcard" style="--accent:${palette[i%4]}"><b>${roles[i]}</b>${w()}</div>`;
+add("coop","COOPÉRATIVE DE LA CLASSE","تعاونية القسم – المكتب والبرنامج",info("Classe|القسم","Année|الموسم")+
+ sec("Le bureau|المكتب")+cols("two",...roles.map((_,i)=>office(i)))+sec("Programme des activités|برنامج الأنشطة")+
+ table(["Mois","Activité","Responsable","Réalisée"],activities.map(r=>[...r,null,'<input type="checkbox">']),"dense")+sig());
+add("coop","PROCÈS-VERBAL DE L’ASSEMBLÉE GÉNÉRALE","محضر الجمع العام وانتخاب المكتب",info("Groupe|الفوج","Date|التاريخ","Présents|الحاضرون","Votants|المصوتون")+
+ sec("Ordre du jour|جدول الأعمال")+ul(["Présentation du rôle de la coopérative.","Présentation des candidatures.","Élection du bureau.","Proposition du programme d’activités."])+
+ box("Déroulement du scrutin|سير الاقتراع",3)+table(["Poste|المهمة","Candidat(s)|الترشيحات","Voix|الأصوات","Élu(e)|المنتخب(ة)"],roles.map(x=>[x,null,null,null]))+
+ info("Bulletins nuls|الأوراق الملغاة","Suffrages exprimés|الأصوات الصحيحة")+box("Décisions et heure de clôture|القرارات وساعة الاختتام",3)+sig(["Présidence|الرئاسة","Secrétariat|الكتابة","Encadrement|التأطير"]));
+add("coop","BILAN MORAL DE LA COOPÉRATIVE","التقرير الأدبي للتعاونية",info("Groupe|الفوج","Exercice|الموسم")+
+ table(["Poste","Nom","Poste","Nom"],repeat(4,i=>[roles[2*i],null,roles[2*i+1],null]))+
+ table(["Mois","Activité","Réalisée","Participants","Observations"],activities.map(a=>[...a,null,null,null]),"dense")+
+ cols("two",box("Points positifs|الإيجابيات",3),box("Difficultés|الصعوبات",3))+box("Perspectives|الآفاق",3)+sig(["Présidence|الرئاسة","Trésorerie|الأمانة","Encadrement|التأطير"]));
+const moneyTable=(list,kind)=>table(["N°","Date","Désignation|البيان","Montant (DH)|المبلغ"],list.map((x,i)=>[i+1,null,x,`<input class="money ${kind}" inputmode="decimal" type="number" min="0" step="0.01" aria-label="${esc(x)}">`]),"dense");
+add("coop","BILAN FINANCIER DE LA COOPÉRATIVE","التقرير المالي للتعاونية",info("Groupe|الفوج","Exercice|الموسم")+
+ `<div class="finance">${sec("1. Recettes|المداخيل")}${moneyTable(["Solde précédent","Cotisations volontaires","Dons","Subvention","Vente de productions","Autres recettes"],"income")}
+ ${sec("2. Dépenses|المصاريف")}${moneyTable(["Matériel de classe","Livres","Décoration des coins","Jardinage","Prix et récompenses","Solidarité","Fête de fin d’année","Autres dépenses"],"cost")}
+ ${sec("3. Situation financière|الوضعية المالية")}<div class="three">${["Recettes / المداخيل","Dépenses / المصاريف","Solde / الرصيد"].map(x=>`<div class="box"><b>${x}</b><p class="cashTotal">— DH</p></div>`).join("")}</div></div>`+
+ box("Observations du trésorier et pièces justificatives|الملاحظات والوثائق المثبتة",3)+sig(["Présidence|الرئاسة","Trésorerie|الأمانة","Encadrement|التأطير"]));
+add("conv","CONVOCATION DU PARENT OU DU TUTEUR","استدعاء ولي الأمر",info("Date|التاريخ","Classe|القسم","Élève|المتعلم(ة)","Destinataire|المرسل إليه")+
+ cols("two",`<div class="box"><b>Madame, Monsieur,</b><p>Nous vous invitons à une rencontre le ${inline()} à ${inline()}, au lieu suivant : ${inline()}.</p><p>Objet de la rencontre :</p>${w(4)}<p>Merci de votre collaboration.</p></div>`,
+ `<div class="box" dir="rtl"><b>السيد(ة) ولي(ة) الأمر،</b><p>يشرفنا دعوتكم إلى لقاء يوم ${inline()} على الساعة ${inline()}، بالمكان التالي: ${inline()}.</p><p>موضوع اللقاء:</p>${w(4)}<p>شكراً على تعاونكم.</p></div>`)+sig(["Enseignant(e)|الأستاذ(ة)","Visa|التأشيرة"])+sec("Accusé de réception – à détacher ✂|وصل الاستلام")+info("Reçu le|تاريخ الاستلام","Signature du tuteur|توقيع الولي"));
+const rules=[
+ ["👂","J’écoute","Je regarde celui qui parle et je me tais.","أنصت","#2e8b57"],
+ ["📋","J’écoute les consignes","Je comprends avant de commencer.","أستمع إلى التعليمات","#1f8a8a"],
+ ["✋","Je demande la parole","Je lève le doigt et j’attends mon tour.","أستأذن في الكلام","#2f6db5"],
+ ["🧑‍🏫","Je passe au tableau","Je participe avec courage.","أشارك على السبورة","#6b46c1"],
+ ["📖","Je lis seul","Je lis à voix haute sans aide.","أقرأ بمفردي","#b03a6b"],
+ ["👫","Je lis en binôme","J’aide mon camarade et il m’aide.","أقرأ مع زميلي","#b13c30"],
+ ["✍️","J’écris dans mon cahier","J’écris proprement, sans dépasser.","أكتب في دفتري","#b75d19"],
+ ["✏️","Je corrige","Je relis et je corrige mes erreurs.","أراجع وأصحح","#93700d"]
+];
+add("regles","LES RÈGLES DE NOTRE CLASSE","سُلَّم ميثاق القسم",`<p style="text-align:right;font-size:24px">🏆</p><div class="stair">${rules.map(([ic,f,sub,a,c],i)=>`<div style="--w:${62+i*5}%;--c:${c}">${i+1}. ${ic} ${f} – ${ar(a)}<br><small>${sub}</small></div>`).reverse().join("")}</div>`+note("Chaque règle respectée = une marche de plus vers la réussite. / كل قاعدة أحترمها درجة جديدة على السلم."),"hanging");
+add("regles","JE MONTE LES MARCHES","بطاقة تتبع السلوك الأسبوعي",info("Nom et prénom|الاسم","Unité|الوحدة")+
+ table(["Ma règle|القاعدة",...repeat(6,i=>"S"+(i+1))],rules.map(([ic,f,,a])=>[ic+" "+f+" – "+ar(a),...repeat(6,()=>'<input type="checkbox" aria-label="Marche réussie">')]).reverse())+
+ box("Mon engagement|التزامي",4)+sig(["Ma signature|توقيعي","Enseignant(e)|الأستاذ(ة)","Parents|الأسرة"]),"hanging");
+
+/* Dossier pédagogique : documents supplémentaires inclus, sans liens externes. */
+add("perso","CARTE PERSONNELLE DE L’ENSEIGNANT(E)","البطاقة الشخصية للأستاذ(ة)",sec("1. Informations personnelles|المعلومات الشخصية")+
+ `<div style="display:grid;grid-template-columns:30mm 1fr;gap:6px">${pic()}${info("Nom|النسب","Prénom|الاسم","Naissance|تاريخ الازدياد","Lieu|المكان","Contact|التواصل","Adresse|العنوان")}</div>`+
+ sec("2. Informations administratives|الوضعية الإدارية")+info("Cadre|الإطار","Grade|الدرجة","Échelle|السلم","Échelon|الرتبة","Recrutement|تاريخ التوظيف","Titularisation|تاريخ الترسيم")+
+ sec("3. Informations professionnelles|المسار المهني")+info("Établissement|المؤسسة","Affectation|التعيين","Mission|المهمة","Dernière visite|آخر زيارة")+
+ sec("4. Diplômes obtenus|الشهادات")+blanks(["Diplôme","Spécialité","Établissement","Année"],3,false)+
+ sec("5. Formation continue|التكوين المستمر")+blanks(["Formation","Lieu","Période / durée"],3,false)+sec("6. Charge d’enseignement|المهام التربوية")+info("Langues|اللغات","Matière|المادة","Classes|الأقسام","Volume horaire|الغلاف الزمني")+sig());
+add("perso","CARTES À DÉCOUPER","بطاقات قابلة للقص",cols("two",...repeat(6,()=>`<div class="pass"><h3>بطاقة الأستاذ(ة) · Carte enseignant(e)</h3>${pic()}Nom / الاسم : ${inline()}<br>Fonction / المهمة : ${inline()}<br>Classe / القسم : ${inline()}<br>Année / الموسم : ${inline()}</div>`))) ;
+for(let n=1;n<=4;n++)add("listes","LISTE DES ÉLÈVES – FEUILLE "+n,"لائحة التلاميذ – ورقة "+n,
+ info("Groupe|الفوج","Année scolaire|الموسم","Effectif|العدد","Filles / garçons|إناث / ذكور")+
+ blanks(["N°","Code Massar|مسار","Nom|النسب","Prénom|الاسم","Sexe|الجنس","Naissance|الازدياد","Observations|ملاحظات"],28,true,"dense")+sig());
+const validationWords=["lavabo","parabole","vélo","salade","jupe","lune","caméra","animal","camarade","domino"];
+const vocab8=[["🐇","un lapin"],["🧳","une valise"],["🦓","un zèbre"],["🐎","un cheval"],["🐁","une souris"],["🚕","un taxi"],["🦒","une girafe"],["🎸","une guitare"]];
+add("validation","TEST DE VALIDATION – PALIER 2","رائز التحقق – الكلمة البسيطة",info("Classe|القسم","Date|التاريخ")+sec("Déroulement individuel|كيفية التمرير")+
+ table(["Partie","Consigne"],[["A. Lecture de mots","L’élève lit seul à voix haute les dix mots de la fiche élève. Noter le nombre de mots lus correctement."],["B. Lecture de phrases","Faire lire les trois phrases. Compter les erreurs."],["C. Vocabulaire","Montrer huit images séparément : « Qu’est-ce que c’est ? »"],["D. Mots outils","Dictée flash sur l’ardoise, facultative."]])+
+ sec("Critères du modèle|معايير النموذج")+table(["Item","Condition"],[["Lecture de mots","Au moins 8 mots sur 10."],["Lecture de phrases","Les trois phrases, avec au maximum trois erreurs."],["Vocabulaire","Au moins six mots reconnus et nommés sur huit."],["Validation","Lecture et vocabulaire validés ; sinon, prévoir un soutien ciblé."]])+note("Modèle pédagogique à adapter aux consignes en vigueur. / نموذج للاستئناس."));
+add("validation","FICHE ÉLÈVE – LECTURE","ورقة المتعلم – القراءة",sec("A. Je lis les mots|أقرأ الكلمات")+cols("two",...validationWords.map(x=>`<div class="wordcard">${x}</div>`))+
+ sec("B. Je lis les phrases|أقرأ الجمل")+["C’est un lapin.","La souris est sous la table.","La guitare est sur la table."].map(x=>`<p class="bigtxt">${x}</p>`).join(""));
+add("validation","VOCABULAIRE ET MOTS OUTILS","المعجم والكلمات الأدوات",note("Montrer les images sans lire les réponses. / تُعرض الصور دون تلقين الأجوبة.")+
+ cols("four",...vocab8.map(([ic])=>`<div class="cutcard emoji">${ic}</div>`))+sec("Repères pour l’enseignant|دليل الأستاذ")+chips(vocab8.map(x=>x[1]))+sec("Dictée flash|الإملاء السريع")+chips(["c’est","sous","sur","dans","voici"]));
+for(let n=1;n<=2;n++)add("validation","GRILLE DE RELEVÉ – "+n,"شبكة فارغة لتفريغ النتائج",info("Groupe|الفوج","Date|التاريخ")+
+ blanks(["N°","Élève|المتعلم","Mots / 10","Erreurs (phrases)","Vocabulaire / 8","Décision|القرار"],27,true,"dense")+box("Observations et soutien|الملاحظات والدعم",3));
+const portfolio=[
+ ["Documents administratifs et pédagogiques","الوثائق الإدارية والتربوية",["Carte personnelle","Informations générales","Emploi du temps","Décision ministérielle","Congés et journées internationales","Références et formations","Rapports de formation","Rapports d’inspection","Cadre de l’enseignement explicite","Réunions pédagogiques","Tableau de garde"]],
+ ["Listes des élèves","اللوائح",["Listes des groupes","Recensement","Répartition par âge","Fréquentation mensuelle","Bilan de fréquentation"]],
+ ["Coopérative de la classe","تعاونية القسم",["Bureau","PV des élections","Programme des activités","Bilan moral","Bilan financier"]],
+ ["Planification","التخطيط",["Répartition annuelle et périodique","Planning des semaines","Cahier journal","Bilan des semestres"]],
+ ["Suivi des élèves","تتبع التلاميذ",["Fiches individuelles","Études de cas","Rapports d’absence","Contacts avec les familles"]],
+ ["Activités parascolaires","الأنشطة الموازية",["Rapports d’activités","Fêtes et commémorations","Sorties scolaires","Autres activités"]]
+];
+const periods=["Mon quartier et mes amis","Mes opinions et mes émotions","Les métiers","Sciences, technologies et environnement","Mon pays et mes valeurs"];
+add("portfolio","PORTFOLIO DE L’ENSEIGNANT – TOME 1","الملف التربوي للأستاذ(ة) – الجزء الأول",cols("two",pic("Logo 1"),pic("Logo 2"))+
+ cols("two",...portfolio.map(([f,a,items],i)=>`<div class="box accent" style="--accent:${palette[i%4]}"><strong>${i+1}. ${f}</strong><p>${ar(a)}</p>${chips(items)}</div>`))+info("Classe|القسم","Année|الموسم"));
+add("portfolio","SOMMAIRE DÉTAILLÉ – TOME 1","الفهرس المفصل",table(["N°","Section et document|القسم والوثيقة","Page|الصفحة"],portfolio.flatMap(([f,,items],i)=>[[String(i+1),`<b>${esc(f)}</b>`,""],...items.map((x,j)=>[`${i+1}.${j+1}`,esc(x),null])]),"dense"));
+portfolio.forEach(([f,a,items],i)=>add("portfolio","INTERCALAIRE "+(i+1)+" – "+f,a,sec("Contenu de la section|محتويات القسم")+table(["N°","Document","Classé"],items.map((x,j)=>[j+1,esc(x),'<input type="checkbox">']))+(i===3?table(["Période","Thème","Dates"],periods.map((x,j)=>[j+1,x,null])):"")+box("Notes|ملاحظات",4)));
+add("portfolio","RAPPORTS D’INSPECTION ET D’ACCOMPAGNEMENT","زيارات التأطير والمواكبة",blanks(["N°","Date","Type de visite","Groupe","Appréciation","Observations"],6,true)+box("Recommandations et suivi|التوصيات والتتبع",5));
+const bookColors=["#ad3c30","#2866a5","#347848","#ac8320","#984672","#6444a4","#c76e27","#207c7c"];
+add("biblio","📚 NOTRE BIBLIOTHÈQUE","مكتبة القسم",["Bac A – Petites histoires","Bac B – Histoires moyennes","Bac C – Grandes histoires"].map((x,i)=>`<h3>${x}</h3><div class="shelf">${repeat(14,j=>`<span class="book" style="height:${18+(j*7)%12}mm;background:${bookColors[(j+i)%8]}">${["Conte","Récit","Roman"][i]}</span>`).join("")}</div>`).join("")+
+ chips(["Je regarde la couleur.","Je prends un livre de mon bac.","Je le note sur la fiche de prêt.","Je le remets à sa place."]),"hanging");
+add("biblio","ÉTIQUETTES DES BACS","ملصقات صناديق الكتب",cols("two",...[["🟥","BAC A","Petites histoires – Soutien"],["🟨","BAC B","Histoires moyennes – Consolidation"],["🟩","BAC C","Grandes histoires – Approfondissement"],["🏘️","UNITÉ 1",theme],["🧚","CONTES","Contes marocains et du monde"],["🔬","DOCUMENTAIRES","Animaux, sciences, métiers"],["💬","BD","Bandes dessinées"],["🎵","POÈMES","Poésies et comptines"]].map(([ic,t,d],i)=>`<div class="labelcard" style="--accent:${bookColors[i]}"><div class="emoji">${ic}</div><b>${t}</b>${d}</div>`)),"hanging");
+add("biblio","PASTILLES POUR LES LIVRES","ملصقات تصنيف الكتب",cols("six",...repeat(54,i=>`<div style="margin:2px auto;border:2px dashed white;border-radius:50%;background:${["#ac3930","#9a7612","#26804b"][Math.floor(i/18)]};color:white;width:16mm;height:16mm;text-align:center;line-height:15mm;font-size:23px"><b>${"ABC"[Math.floor(i/18)]}</b></div>`)),"hanging");
+add("biblio","INVENTAIRE DES LIVRES","سجل جرد الكتب",blanks(["N°","Titre du livre|العنوان","Genre|النوع","Bac|الصندوق","État|الحالة"],28,true,"dense"),"hanging");
+const mural=(f,a,h)=>add("mural",f,a,h,"hanging");
+mural("JOURNAL MURAL – COIN DE LECTURE","المجلة الحائطية – ركن القراءة",`<div style="text-align:center;font-size:50px">📚 🏘️ 👫</div><h2 style="text-align:center">Unité 1 · ${theme}</h2>`+
+ cols("two",...["🌳 Notre arbre à lire","🛣️ Ma route de lecture","🏆 Les défis du mois","❤️ Coup de cœur","🌟 Lecteur de la semaine","🧱 Mur de mots"].map(x=>`<div class="labelcard">${x}</div>`))+note("« Lire, c’est voyager dans son quartier et dans le monde entier ! »"));
+const leafPos=[[150,150],[225,105],[300,90],[375,105],[450,150],[115,225],[195,200],[275,175],[355,180],[435,205],[500,240],[140,300],[220,275],[300,255],[380,265],[460,295],[185,350],[265,335],[345,335],[420,350]];
+mural("NOTRE ARBRE À LIRE","شجرة القراءة",`<svg class="svgart" viewBox="0 0 620 560" role="img" aria-label="Arbre de lecture à vingt feuilles"><ellipse cx="310" cy="235" rx="262" ry="190" fill="#a9e1b6"/><path d="M310 540V300 M310 420L165 280 M310 395L450 272" fill="none" stroke="#935c24" stroke-width="24"/>${leafPos.map(([x,y],i)=>`<g transform="translate(${x},${y})"><ellipse rx="32" ry="20" fill="${["#80c592","#f2d75e","#f6aacc"][i%3]}" stroke="#326e44"/><text text-anchor="middle" y="5">${i+1}</text></g>`).join("")}<path d="M0 540H620" stroke="#65ac72" stroke-width="20"/></svg>`+note("Je lis un livre, j’écris son titre sur une feuille puis je la colle sur l’arbre. Objectif de la classe : "+inline()+" feuilles."));
+mural("MES FEUILLES DE LECTURE","أوراق شجرة القراءة",cols("three",...repeat(12,()=>`<div class="leaf">📖 Titre : ${w()}Prénom : ${w()}☆☆☆☆☆</div>`)));
+const stops=[["🏠","Ma maison","Un texte sur ma famille"],["🏪","L’épicerie","Une recette ou une liste"],["📮","La poste","Une lettre ou une carte"],["🏫","L’école","Une histoire d’amis"],["🌳","Le jardin","Un poème"],["🏘️","Chez le voisin","Un portrait"],["🕌","La place","Un conte marocain"],["🏆","Bravo !","J’ai fini ma route"]];
+mural("MA ROUTE DE LECTURE","مسار القراءة",info("Prénom|الاسم","Classe|القسم")+`<svg class="svgart" viewBox="0 0 600 630" role="img" aria-label="Parcours de lecture en huit étapes"><path d="M85 75Q170 10 270 75T490 95Q590 180 490 245T280 335Q185 385 100 335T105 495Q180 565 410 535" stroke="#5d6572" stroke-width="28" fill="none"/><path d="M85 75Q170 10 270 75T490 95Q590 180 490 245T280 335Q185 385 100 335T105 495Q180 565 410 535" stroke="white" stroke-width="3" stroke-dasharray="12 8" fill="none"/>${stops.map(([ic,t,d],i)=>{const [x,y]=[[85,75],[270,75],[490,95],[490,245],[280,335],[100,335],[105,495],[410,535]][i];return `<g transform="translate(${x},${y})"><circle r="32" fill="white" stroke="#2f6db5" stroke-width="4"/><text text-anchor="middle" y="9" font-size="27">${ic}</text><rect x="-77" y="36" width="154" height="39" rx="7" fill="#fff7df"/><text text-anchor="middle" y="52" font-size="13">${i+1}. ${t}</text><text text-anchor="middle" y="66" font-size="10">${d}</text></g>`}).join("")}</svg>`);
+const defis=["Lire une liste de courses à voix haute.","Écrire une petite carte à un ami.","Lire le portrait d’un voisin.","Lire un plan et trouver l’épicerie.","Lire un livre en entier.","Lire une histoire à un camarade.","Lire une recette et la raconter.","Trouver dix mots du quartier dans un texte.","Jouer un dialogue entre voisins.","Lire un texte à sa famille.","Lire cinq minutes par jour pendant une semaine.","Présenter son livre préféré."];
+mural("LES DÉFIS DU MOIS","تحديات القراءة",info("Mois|الشهر","Prénom|الاسم")+cols("three",...defis.map((x,i)=>`<div class="cutcard"><b>${i+1}.</b> ${x}<p><input type="checkbox"> Réussi</p></div>`))+chips(["🥉 4 défis – Lecteur curieux","🥈 8 défis – Lecteur champion","🥇 12 défis – Roi ou reine de la lecture"]));
+mural("COUP DE CŒUR DES ÉLÈVES","كتابي المفضّل",info("Titre|العنوان","Auteur|الكاتب","Personnages|الشخصيات","Lieu|المكان")+cols("two",box("Je dessine la couverture|أرسم الغلاف",12),box("L’histoire en deux phrases|القصة في جملتين",12))+box("J’ai aimé ce livre parce que…|أعجبني الكتاب لأن…",4)+chips(["☆☆☆☆☆","😄 joyeux","😲 surpris","😢 triste","🤔 curieux"]));
+mural("LECTEUR DE LA SEMAINE","قارئ الأسبوع",`<div style="max-width:58mm;margin:7mm auto">${pic("Photo ou dessin / صورة أو رسم")}</div>`+info("Prénom|الاسم","Classe|القسم","Semaine|الأسبوع","Livres lus|الكتب المقروءة")+box("Mon conseil de lecture|نصيحتي للقراء",5)+cols("three",...["🥈","🥇","🥉"].map(x=>`<div class="labelcard">${x}${w()}</div>`)));
+mural("MUR DE MOTS – UNITÉ 1","حائط الكلمات",cols("four",...["🏪 l’épicerie","📮 la poste","🏘️ le quartier","⬅️ à gauche","➡️ à droite","👫 à côté","⬆️ devant","🔙 derrière","🥛 le lait","🌾 la farine","🥚 des œufs","🍬 le sucre","🏠 le voisin","🤗 gentil","🙇 poli","🦒 grand","💌 inviter","🤲 aider","📞 appeler","🙏 remercier"].map((x,i)=>`<div class="labelcard" style="--accent:${palette[i%4]}"><b>${x}</b></div>`))+chips(["Les lieux","Se repérer","La recette","Le voisin et l’amitié"]));
+mural("RÈGLES DU COIN DE LECTURE","قواعد ركن القراءة",cols("two",...["🤫 Je parle doucement.","🧼 J’ai les mains propres.","📕 Je tourne les pages doucement.","🔙 Je remets le livre à sa place.","🪑 Je m’assois calmement.","🤝 Je partage les livres.","📝 Je note le livre emprunté.","❤️ Je prends soin des livres."].map(x=>`<div class="labelcard">${x}</div>`))+box("Notre engagement|التزامنا",4));
+mural("FICHE DE PRÊT DES LIVRES","سجل إعارة الكتب",blanks(["N°","Titre du livre","Élève","Classe","Date du prêt","Date du retour","Visa"],22,true,"dense")+note("Durée du prêt proposée : une semaine. Signaler tout livre perdu ou abîmé."));
+add("stars","TABLEAU DES ÉTOILES","جدول النجوم",info("Classe|القسم","Unité|الوحدة")+blanks(["N°","Nom et prénom","S1","S2","S3","S4","S5","S6","Total ⭐","Rang"],30,true,"dense")+chips(["📖 Lecture","🗣 Participation","✍ Travail soigné","🤝 Entraide","🙇 Politesse"]),"hanging");
+add("stars","LES CHAMPIONS DU MOIS","منصة التشجيع الشهرية",info("Classe|القسم","Mois|الشهر")+`<div class="podium">${[[2,"#abb4c2",40],[1,"#e9bf42",58],[3,"#cc9763",30]].map(([n,c,h])=>`<div class="pod" style="--accent:${c}">${pic("Photo ou dessin")}${w(1,"Nom")}<b style="height:${h}mm">${n}</b></div>`).join("")}</div>`+box("Mentions : progrès, lecture, politesse, entraide|تنويهات خاصة",4),"hanging");
+[["🥇","D’OR","ذهبية","#b38c1f"],["🥈","D’ARGENT","فضية","#8697a9"],["🥉","DE BRONZE","برونزية","#a96c38"]].forEach(([ic,f,a,c])=>add("stars","DIPLÔME "+f,"شهادة تقدير "+a,`<div class="diploma" style="--accent:${c}"><div style="font-size:72px">${ic}</div><h2>DIPLÔME ${f}</h2><p>Ce diplôme est décerné à / تمنح هذه الشهادة إلى:</p>${w(3)}<p>Pour / تقديراً لـ:</p>${w(4)}<p>⭐ Nombre d’étoiles : ${inline()}</p><p>Félicitations ! Continue ainsi !</p>${sig()}</div>`,"hanging"));
+add("stars","ÉTOILES À DÉCOUPER","نجوم للتشجيع والقص",cols("four",...repeat(24,i=>`<div class="starcut" style="--accent:${bookColors[i%8]}"><b>★</b>${["BRAVO","SUPER LECTEUR","CHAMPION","TRÈS BIEN","EXCELLENT","BEAU TRAVAIL","POLI","SERVIABLE"][i%8]}</div>`)),"hanging");
+const holidays=[
+ ["Fêtes nationales","Fête de l’Unité","31/10/2026",""],["","Marche Verte","06/11/2026",""],["","Indépendance","18/11/2026",""],["","Nouvel An","01/01/2027",""],["","Manifeste de l’Indépendance","11/01/2027",""],["","Nouvel An amazigh","14/01/2027",""],["","Fête du Travail","01/05/2027",""],
+ ["Fêtes religieuses","Aïd al-Fitr","10/03/2027","11/03/2027"],["","Aïd al-Adha","16/05/2027","18/05/2027"],["","Nouvel An de l’Hégire","06/06/2027",""],
+ ["Vacances","Intermédiaires n° 2","06/12/2026","13/12/2026"],["","Fin du premier semestre","24/01/2027","31/01/2027"],["","Intermédiaires n° 3","21/03/2027","28/03/2027"],["","Intermédiaires n° 4","09/05/2027","16/05/2027"],["","Été","27/06/2027",""]];
+const editableValue=s=>`<div class="write" contenteditable="plaintext-only" dir="auto">${esc(s)}</div>`;
+add("cal","CALENDRIER DES CONGÉS – 2026/2027","نموذج رزنامة العطل",
+ note("<b>Calendrier indicatif repris du modèle, non vérifié comme calendrier officiel.</b> Vérifier et corriger les dates selon la note ministérielle, notamment les fêtes religieuses. / التواريخ استرشادية، تراجع وفق المقرر الوزاري.")+
+ table(["Type","Occasion","Du","Au"],holidays.map(([a,b,c,d])=>[a,b,editableValue(c),editableValue(d)]))+box("Référence du calendrier officiel|مرجع المقرر المعتمد",3));
+const international=[
+ ["08/09","Alphabétisation","Atelier de lecture"],["21/09","Paix","Colombes et slogans"],["05/10","Enseignants","Lettres de remerciement"],["16/10","Alimentation","Affiche sur l’équilibre alimentaire"],["20/11","Droits de l’enfant","Débat et affiche"],["03/12","Personnes handicapées","Sensibilisation à l’inclusion"],["10/12","Droits de l’homme","Textes et dessins"],["18/12","Langue arabe","Calligraphie et récitation"],["14/01","Nouvel An amazigh","Exposition"],["21/02","Langue maternelle","Mots et chants"],["08/03","Droits des femmes","Portraits et hommages"],["21/03","Poésie et forêts","Récital ou plantation"],["22/03","Eau","Économiser l’eau"],["07/04","Santé","Hygiène à l’école"],["22/04","Terre","Tri des déchets"],["23/04","Livre","Échange de livres"],["25/05","Journée nationale de l’enfant","Parlement de classe"],["31/05","Sans tabac","Affiche de sensibilisation"],["05/06","Environnement","Productions écocitoyennes"],["12/06","Contre le travail des enfants","Débat sur le droit à l’école"]];
+add("cal","JOURNÉES INTERNATIONALES ET NATIONALES","الأيام العالمية والوطنية",table(["Date","Journée","Activité proposée"],international,"dense")+note("Pistes d’activités en classe. Une journée thématique n’est pas nécessairement un jour de congé."));
+
+/* Navigation : toutes les cartes ci-dessus ouvrent du contenu embarqué. */
+const cache=new Map();
+const titles=new Map();
+const tiles=$$(".tile");
+tiles.forEach(a=>{
+ const id=a.hash.slice(5),name=a.querySelector("i").textContent;
+ titles.set(id,a.querySelector("b").textContent+" / "+name);
+ const small=document.createElement("small");small.textContent=(db.get(id)||[]).length+" صفحة / pages · A4";a.appendChild(small);
+ if(a.closest("#grid")){
+  const n=document.createElement("a");n.href=a.hash;n.textContent=a.querySelector("em").textContent+" "+name;
+  if(id==="tarl")n.className="test-link";$("nav").appendChild(n);
+ }
+});
+const navD=document.createElement("a");navD.href="#dossier";navD.textContent="📁 Dossier pédagogique";$("nav").appendChild(navD);
+const navPrint=document.createElement("button");navPrint.type="button";navPrint.className="print-link";navPrint.textContent="🖨️ Imprimer / PDF";$("nav").appendChild(navPrint);
+let active=null,stage=null;
+function visiblePages(){return stage?$$(".sheet",stage).filter(el=>!el.hidden):[]}
+function applySelection(){
+ if(!stage)return;
+ $$(".sheet",stage).forEach((s,i)=>{s.hidden=$("pageChoice").value!=="all"&&String(i)!==$("pageChoice").value;s.classList.remove("lastPrint")});
+ const v=visiblePages();if(v.length)v[v.length-1].classList.add("lastPrint");
+}
+function openDoc(id){
+ const data=db.get(id);if(!data)return;
+ if(!cache.has(id)){
+  const el=document.createElement("div");el.innerHTML=data.map((p,i)=>sheet(p,i,data.length)).join("");
+  $$(".annual",el).forEach(drawAnnual);cache.set(id,el);
+ }
+ active=id;stage=cache.get(id);$("sheets").replaceChildren(stage);
+ $("home").hidden=true;$("library").hidden=true;$("viewer").hidden=false;
+ $("docName").textContent=titles.get(id)||id;
+ $("pageChoice").replaceChildren(new Option("جميع الصفحات / Tout","all"),...data.map((p,i)=>new Option(`${i+1}. ${p.fr}`,String(i))));
+ $("weeklyShortcut").hidden=id!=="ee";applySelection();window.scrollTo(0,0);
+}
+$("pageChoice").onchange=applySelection;
+$("sheets").addEventListener("input",e=>{
+ const wrap=e.target.closest(".annual");if(wrap)drawAnnual(wrap);
+ const fin=e.target.closest(".finance");if(fin){
+  const numbers=sel=>$$(sel,fin).reduce((s,x)=>s+(x.value!==""&&x.validity.valid?Math.round(+x.value*100):0),0);
+  const r=numbers(".income"),d=numbers(".cost");const any=$$(".money",fin).some(x=>x.value!==""&&x.validity.valid);
+  $$(".cashTotal",fin).forEach((out,i)=>out.textContent=any?([r,d,r-d][i]/100).toFixed(2)+" DH":"— DH");
+ }
+ if(e.target.matches(".progressbox select"))e.target.parentNode.querySelector(".progressbar").style.width=(Number(e.target.value)*100/7)+"%";
+});
+$("sheets").addEventListener("change",e=>{
+ if(e.target.type!=="file")return;
+ const f=e.target.files[0];if(!f)return;
+ if(!["image/png","image/jpeg","image/webp"].includes(f.type)){alert("اختار صورة PNG أو JPG أو WebP.");return}
+ const holder=e.target.closest(".pic");const prev=holder.querySelector("img");if(prev){URL.revokeObjectURL(prev.src);prev.remove()}
+ holder.querySelector("span").hidden=true;
+ const im=new Image();im.alt="Illustration ajoutée localement";im.src=URL.createObjectURL(f);holder.prepend(im);
+});
+function printDoc(){if(!$("viewer").hidden){window.print()}else{location.hash="catalogue";alert("اختار بطاقة الوثيقة أولاً، ثم اضغط طباعة / PDF.")}}
+$("printDoc").onclick=printDoc;navPrint.onclick=printDoc;
+const norm=t=>t.toLowerCase().normalize("NFD").replace(/[\u0300-\u036f\u064b-\u065f]/g,"").replace(/[أإآ]/g,"ا").trim();
+function filterDocs(){
+ const q=norm($("q").value);let n=0;
+ tiles.forEach(t=>{t.hidden=!!q&&!norm(t.textContent).includes(q);if(!t.hidden)n++});
+ $("notFound").hidden=n!==0;
+ if(q&&$$(".tile:not([hidden])",$("dossier")).length)$("dossier").open=true;
+}
+$("q").oninput=filterDocs;
+$("searchForm").onsubmit=e=>{e.preventDefault();filterDocs();$("catalogue").scrollIntoView()};
+document.addEventListener("click",e=>{const a=e.target.closest('a[href="#catalogue"]');if(a){$("q").value="";filterDocs()}});
+
+/* Vrai fichier Word .docx : export local du texte et des tableaux actuellement affichés. */
+const encoder=new TextEncoder();
+function zipStore(files){
+ const crcTable=repeat(256,i=>{let c=i;for(let j=0;j<8;j++)c=(c&1)?0xedb88320^(c>>>1):c>>>1;return c>>>0});
+ const first=[],central=[];let offset=0;
+ const buf=n=>{const a=new Uint8Array(n);return [a,new DataView(a.buffer)]};
+ for(const [name,value] of Object.entries(files)){
+  const n=encoder.encode(name),d=typeof value==="string"?encoder.encode(value):value;
+  let c=0xffffffff;for(const b of d)c=crcTable[(c^b)&255]^(c>>>8);c=(c^0xffffffff)>>>0;
+  let [l,v]=buf(30);v.setUint32(0,0x04034b50,true);v.setUint16(4,20,true);v.setUint16(12,33,true);v.setUint32(14,c,true);
+  v.setUint32(18,d.length,true);v.setUint32(22,d.length,true);v.setUint16(26,n.length,true);
+  first.push(l,n,d);
+  let [h,z]=buf(46);z.setUint32(0,0x02014b50,true);z.setUint16(4,20,true);z.setUint16(6,20,true);z.setUint16(14,33,true);
+  z.setUint32(16,c,true);z.setUint32(20,d.length,true);z.setUint32(24,d.length,true);z.setUint16(28,n.length,true);z.setUint32(42,offset,true);
+  central.push(h,n);offset+=l.length+n.length+d.length;
+ }
+ const [end,v]=buf(22),count=Object.keys(files).length;
+ v.setUint32(0,0x06054b50,true);v.setUint16(8,count,true);v.setUint16(10,count,true);
+ v.setUint32(12,central.reduce((s,a)=>s+a.length,0),true);v.setUint32(16,offset,true);
+ return new Blob([...first,...central,end],{type:"application/vnd.openxmlformats-officedocument.wordprocessingml.document"});
+}
+function download(blob,name){const u=URL.createObjectURL(blob),a=document.createElement("a");a.href=u;a.download=name;document.body.append(a);a.click();a.remove();setTimeout(()=>URL.revokeObjectURL(u),5000)}
+const xml=s=>esc(String(s).replace(/[\u0000-\u0008\u000b\u000c\u000e-\u001f]/g,""));
+function wordText(n){
+ if(n.nodeType===3)return n.textContent;
+ if(n.nodeType!==1||n.hidden)return "";
+ if(n.matches("input[type=checkbox]"))return n.checked?"☑":"☐";
+ if(n.matches("input[type=file]"))return "";
+ if(n.matches("input,textarea"))return n.value||"…………";
+ if(n.matches("select"))return n.selectedOptions[0]?.textContent||"…………";
+ if(n.matches("br"))return "\n";
+ if(n.matches("svg,img"))return n.getAttribute("aria-label")||n.getAttribute("alt")||"";
+ if(n.matches(".write")&&!n.textContent.trim())return "……………………";
+ return Array.from(n.childNodes).map(wordText).join(n.matches("tr,.bil,.sigs,thead,tbody,.levels,.paperhead,.paperfoot")?"  ":"");
+}
+function paragraph(s,size=20,bold=false){
+ const txt=String(s).trim(),rtl=/^[^\p{L}]*[\u0600-\u06ff]/u.test(txt);
+ return `<w:p><w:pPr><w:spacing w:after="40"/>${rtl?'<w:bidi/><w:jc w:val="right"/>':""}</w:pPr><w:r><w:rPr><w:rFonts w:ascii="Arial" w:hAnsi="Arial" w:cs="Arial"/>${bold?"<w:b/><w:bCs/>":""}<w:sz w:val="${size}"/><w:szCs w:val="${size}"/>${rtl?"<w:rtl/>":""}</w:rPr>${txt.split(/\n/).map(line=>`<w:t xml:space="preserve">${xml(line)}</w:t>`).join("<w:br/>")}</w:r></w:p>`;
+}
+function asWord(n){
+ if(n.nodeType===3)return n.textContent.trim()?paragraph(n.textContent):"";
+ if(n.nodeType!==1||n.hidden||n.matches(".pin,.flagbar,input[type=file],.noPrint,script,style"))return "";
+ if(n.tagName==="TABLE"){
+  const rows=Array.from(n.rows);if(!rows.length)return "";
+  const cols=Math.max(...rows.map(r=>Array.from(r.cells).reduce((s,c)=>s+c.colSpan,0)));
+  const width=n.closest(".land")?14600:10100;
+  const border=["top","left","bottom","right","insideH","insideV"].map(s=>`<w:${s} w:val="single" w:sz="4" w:color="C9B79C"/>`).join("");
+  return `<w:tbl><w:tblPr><w:tblW w:w="${width}" w:type="dxa"/><w:tblBorders>${border}</w:tblBorders></w:tblPr><w:tblGrid>${repeat(cols,()=>`<w:gridCol w:w="${Math.floor(width/cols)}"/>`).join("")}</w:tblGrid>${rows.map(r=>`<w:tr>${Array.from(r.cells).map(c=>`<w:tc><w:tcPr><w:tcW w:w="${Math.floor(width*c.colSpan/cols)}" w:type="dxa"/>${c.colSpan>1?`<w:gridSpan w:val="${c.colSpan}"/>`:""}${c.tagName==="TH"?'<w:shd w:fill="F3E3C6"/>':""}</w:tcPr>${paragraph(wordText(c),cols>15?11:16,c.tagName==="TH")}</w:tc>`).join("")}</w:tr>`).join("")}</w:tbl>`+paragraph("",8);
+ }
+ if(n.matches("h1,h2,h3,h4,p,li,label,select,input,.write,.sigs,.paperhead,.paperfoot,.wordcard,.pill,.leaf,.labelcard,.cutcard,.starcut,.book,.letters span,.stair div,svg,img")||!n.children.length){
+  return paragraph(wordText(n),n.matches("h1")?30:n.matches("h2,h3")?23:19,n.matches("h1,h2,h3,h4,b,strong,th"));
+ }
+ return Array.from(n.childNodes).map(asWord).join("");
+}
+$("wordDoc").onclick=()=>{
+ const pages=visiblePages();if(!pages.length)return;
+ const base="http://schemas.openxmlformats.org/";
+ const rel=base+"package/2006/relationships";
+ const office=base+"officeDocument/2006/relationships/officeDocument";
+ const landscape=pages[0].classList.contains("land");
+ const pageSize=landscape?'w:w="16838" w:h="11906" w:orient="landscape"':'w:w="11906" w:h="16838"';
+ const data={
+ "[Content_Types].xml":`<Types xmlns="${base}package/2006/content-types"><Default Extension="rels" ContentType="application/vnd.openxmlformats-package.relationships+xml"/><Default Extension="xml" ContentType="application/xml"/><Override PartName="/word/document.xml" ContentType="application/vnd.openxmlformats-officedocument.wordprocessingml.document.main+xml"/></Types>`,
+ "_rels/.rels":`<Relationships xmlns="${rel}"><Relationship Id="rId1" Type="${office}" Target="word/document.xml"/></Relationships>`,
+ "word/document.xml":`<?xml version="1.0" encoding="UTF-8"?><w:document xmlns:w="${base}wordprocessingml/2006/main"><w:body>${pages.map(p=>asWord(p)).join('<w:p><w:r><w:br w:type="page"/></w:r></w:p>')}<w:sectPr><w:pgSz ${pageSize}/><w:pgMar w:top="650" w:left="650" w:right="650" w:bottom="650" w:header="300" w:footer="300" w:gutter="0"/></w:sectPr></w:body></w:document>`
+ };
+ download(zipStore(data),"MoursahProf-"+active+".docx");
+};
+
+/* Ressources publiques. Un visiteur ne peut pas modifier la version publiée. */
+const subjects={ar:"العربية",fr:"Français",math:"الرياضيات"};
+const kinds={ppt:"📊 درس PowerPoint",fiche:"📄 جذاذة التدريس الصريح",schema:"🧩 خطاطة الدرس",folder:"📁 مجلد المادة"};
+const localEditor=location.protocol==="file:";
+const validURL=s=>{try{const u=new URL(s);return u.protocol==="https:"&&!u.username&&!u.password?u.href:""}catch{return ""}};
+let links=[];
+try{links=JSON.parse($("publishedLinks").textContent).filter(x=>x&&validURL(x.url))}catch{}
+let level=1,subject="ar",week=1;
+const bySubject=x=>Number(x.level)===level&&x.subject===subject;
+function resourceAnchor(x){
+ const a=document.createElement("a");a.className="resource-link";a.href=validURL(x.url);a.target="_blank";a.rel="noopener noreferrer";a.textContent=x.title;return a;
+}
+function paintLibrary(){
+ $("libTitle").textContent="المستوى "+level+" – الدروس والجذاذات الأسبوعية";
+ $("subjects").replaceChildren(...Object.entries(subjects).map(([k,t])=>{const b=document.createElement("button");b.textContent=t;b.classList.toggle("active",k===subject);b.onclick=()=>{subject=k;paintLibrary()};return b}));
+ $("week").value=String(week);$("folderLinks").replaceChildren();
+ links.filter(x=>bySubject(x)&&x.kind==="folder").forEach(x=>$("folderLinks").appendChild(resourceAnchor(x)));
+ $("resources").replaceChildren(...["ppt","fiche","schema"].map(k=>{
+  const art=document.createElement("article"),h=document.createElement("h3");h.textContent=kinds[k];art.append(h);
+  const found=links.filter(x=>bySubject(x)&&Number(x.week)===week&&x.kind===k);
+  if(!found.length){const p=document.createElement("p");p.className="dim";p.textContent="ما تزاد حتى ملف لهاد الأسبوع بعد.";art.append(p)}
+  else found.forEach(x=>art.append(resourceAnchor(x)));return art;
+ }));
+ $("editor").hidden=!localEditor;
+ if(localEditor){
+  $("manage").replaceChildren();
+  links.forEach((x,i)=>{if(!bySubject(x)||(x.kind!=="folder"&&Number(x.week)!==week))return;
+   const p=document.createElement("p"),b=document.createElement("button");p.append(document.createTextNode(x.title+" "));b.textContent="حذف الرابط";
+   b.onclick=()=>{if(confirm("حذف الرابط من هاد النسخة؟")){links.splice(i,1);paintLibrary()}};p.append(b);$("manage").append(p);
+  });
+ }
+}
+repeat(52,i=>$("week").add(new Option("الأسبوع "+(i+1)+" / Semaine "+(i+1),String(i+1))));
+$("week").onchange=e=>{week=Number(e.target.value);paintLibrary()};
+$("linkForm").onsubmit=e=>{
+ e.preventDefault();if(!localEditor)return;
+ const url=validURL($("linkUrl").value.trim()),title=$("linkTitle").value.trim(),kind=$("kind").value;
+ if(!url||!title){alert("أدخل عنواناً ورابط https صالحاً.");return}
+ links.push({level,subject,week:kind==="folder"?0:week,kind,title,url});
+ $("linkTitle").value="";$("linkUrl").value="";paintLibrary();
+ $("notice").textContent="تزّاد الرابط للمسودة. نزّل النسخة المحدّثة وانشرها باش يشوفها الجميع.";
+};
+$("exportSite").onclick=()=>{
+ if(!localEditor)return;
+ const clean=pristine.cloneNode(true);
+ clean.querySelector("#publishedLinks").textContent=JSON.stringify(links).replace(/</g,"\\u003c");
+ download(new Blob(["<!doctype html>\n",clean.outerHTML],{type:"text/html;charset=utf-8"}),"index.html");
+ $("notice").textContent="النسخة فيها غير روابط المكتبة؛ المعلومات المكتوبة فالوثائق ما كتدخلش فيها.";
+};
+function route(){
+ const key=location.hash.slice(1);
+ $("notice").textContent="";
+ if(key.startsWith("doc-")&&db.has(key.slice(4))){openDoc(key.slice(4));return}
+ $("viewer").hidden=true;
+ if(/^niv-[1-6]$/.test(key)){
+  level=Number(key.slice(-1));week=1;subject="ar";$("home").hidden=true;$("library").hidden=false;paintLibrary();window.scrollTo(0,0);return;
+ }
+ $("library").hidden=true;$("home").hidden=false;
+ if(key==="dossier")$("dossier").open=true;
+ if(["catalogue","niveaux","about","contact","privacy","dossier"].includes(key))requestAnimationFrame(()=>$(key).scrollIntoView());
+ else window.scrollTo(0,0);
+}
+window.addEventListener("hashchange",route);
+const bar=document.querySelector(".menu");
+if("ResizeObserver" in window)new ResizeObserver(()=>document.documentElement.style.setProperty("--bar",bar.offsetHeight+"px")).observe(bar);
+route();
+})();
+</script>
+</body>
+</html>
